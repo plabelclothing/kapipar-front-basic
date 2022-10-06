@@ -1,0 +1,42 @@
+@import url(../pages/HomePage/HomePage.css);
+
+/* reused styles */
+.wrapper {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  background-color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffcc00;
+  border-radius: 50px;
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #FFE145, #FF8540);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #FFFFFF inset;
+}
+
+button:hover {
+  box-shadow: none;
+  color: #141414;
+}
