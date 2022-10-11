@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url(../pages/HomePage/HomePage.css);
+
 
 /* reused styles */
 .wrapper {
-  font-family: 'Montserrat Subrayada', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 17px;
-  background-color: #FFFFFF;
+  width: 1429px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -24,6 +24,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 132px;
+  height: 47px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -39,4 +41,29 @@ button {
 button:hover {
   box-shadow: none;
   color: #141414;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 42.67px;
+  color: #141414;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36.57px;
+  color: #141414;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #141414;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25.2px;
+  color: #8F8E8E;
 }
