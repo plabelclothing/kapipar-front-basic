@@ -59,6 +59,11 @@ h4 {
   color: #141414;
 }
 
+h5 {
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
 p {
   font-weight: 500;
   font-size: 18px;
@@ -147,14 +152,79 @@ p {
   margin: 0 0 25px 0;
 }
 
+.join-us_description {
+  width: 1038px;
+  margin: 0 auto;
+}
+
 .join-us_cards_wrapper {
   display: flex;
-  width: 1146px;
+  margin-top: 25px;
 }
 
 .join-us_cards {
-  width: 382px;
   margin: 0 11px 0 0;
   border-radius: 10px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
+
+.join-us_cards:nth-child(3) {
+  margin: 0;
+}
+
+.join-us_sign_image {
+  width: 232px;
+  padding: 71px 75px 0;
+}
+
+.join-us_shopping_image {
+  width: 244.79px;
+  padding: 61px 69px 0;
+}
+
+.join-us_export_image {
+  padding: 69px 38px 0;
+}
+
+.join-us_sign_title {
+  margin: 0;
+  padding: 15px 46.5px 0;
+}
+
+.join-us_sign_description {
+  margin: 0;
+  padding: 25px 20px 71px;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #000;
+}
+
+.join-us_shopping_title {
+  margin: 0;
+  padding: 15px 65px 0;
+}
+
+.join-us_shopping_description {
+  width: 342px;
+  margin: 0;
+  padding: 15px 20px 61px;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #000;
+}
+
+.join-us_export_title {
+  margin: 0;
+  padding: 34px 45.5px 0;
+}
+
+.join-us_export_description {
+  max-width: 342px;
+  margin: 0;
+  padding: 15px 24px 60px;
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #000;
+}
+
+/* our service styles */
