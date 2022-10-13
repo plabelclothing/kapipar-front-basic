@@ -18,7 +18,7 @@ ul {
   list-style-type: none;
 }
 
-button {
+.get-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,9 +36,26 @@ button {
   box-shadow: 2px 1000px 1px #FFFFFF inset;
 }
 
-button:hover {
+.get-btn:hover {
   box-shadow: none;
   color: #141414;
+}
+
+.read-more {
+  display: flex;
+  margin-top: 34px;
+  padding: 3.5px 0 0;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: #FFE145;
+}
+
+.arrows {
+  width: 12px;
+  padding: 2px 0 0 21px;
 }
 
 h1 {
@@ -228,3 +245,28 @@ p {
 }
 
 /* our service styles */
+
+.our-service {
+  display: flex;
+  margin: 223px 99px 0;
+}
+
+.our-service_wrapper {
+  max-width: 505px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 182px;
+}
+
+.our-service_title {
+  margin: 0;
+}
+
+.our-service_subtitle {
+  margin: 15px 0 15px;
+}
+
+.our-service_description {
+  margin: 0;
+}
