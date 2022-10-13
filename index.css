@@ -247,26 +247,91 @@ p {
 /* our service styles */
 
 .our-service {
-  display: flex;
-  margin: 223px 99px 0;
+  margin: 221px 68px 0;
 }
 
-.our-service_wrapper {
-  max-width: 505px;
+.package-consolidation {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+}
+
+.package-consolidation_wrapper {
+  width: 505px;
   margin-right: 182px;
 }
 
-.our-service_title {
+.package-consolidation_title {
   margin: 0;
 }
 
-.our-service_subtitle {
+.package-consolidation_subtitle {
   margin: 15px 0 15px;
 }
 
-.our-service_description {
+.package-consolidation_description {
   margin: 0;
+}
+
+.slimming-parcels {
+  display: flex;
+  margin-top: 150px;
+}
+
+.slimming-parcels_wrapper {
+  width: 505px;
+  margin-left: 190px;
+}
+
+.slimming-parcels_title {
+  margin: 0;
+}
+
+.slimming-parcels_subtitle {
+  margin: 15px 0 15px;
+}
+
+.slimming-parcels_description {
+  margin: 0;
+}
+
+.taking-pictures {
+  display: flex;
+  margin-top: 150px;
+}
+
+.taking-pictures_wrapper {
+  width: 505px;
+  margin-right: 61px;
+}
+
+.taking-pictures_title {
+  margin: 0;
+}
+
+.taking-pictures_subtitle {
+  margin: 15px 0 15px;
+}
+
+.taking-pictures_description {
+  margin: 0;
+}
+
+.save-money {
+  display: flex;
+  width: 1170px;
+  margin-top: 150px;
+  border-radius: 50px;
+  background: linear-gradient(264.66deg, #F2F2F2 21.36%, #E4E4E4 101.02%);;
+}
+
+.save-money_image {
+  margin: 65px 25px 0 55px;
+}
+
+.save-money_wrapper {
+  width: 479px;
+  margin: 94px 0 76px 40px;
+}
+
+.save-money_btn {
+  box-shadow: 2px 1000px 1px #F2F2F2 inset
 }
