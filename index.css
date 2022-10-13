@@ -317,7 +317,6 @@ p {
 
 .save-money {
   display: flex;
-  width: 1170px;
   margin-top: 150px;
   border-radius: 50px;
   background: linear-gradient(264.66deg, #F2F2F2 21.36%, #E4E4E4 101.02%);;
@@ -334,4 +333,28 @@ p {
 
 .save-money_btn {
   box-shadow: 2px 1000px 1px #F2F2F2 inset
+}
+
+/* footer styles */
+
+.footer {
+  background: #FAFAFA;
+}
+
+.footer-wrapper {
+  padding: 95px 83px 115px 142px;
+}
+
+.also-on_wrapper {
+  width: 190px;
+}
+
+.also-on_title {
+  margin: 0 0 0 3px;
+}
+
+.also-on_underline {
+  width: 50px;
+  margin: 10px 0 0;
+  border-top: 2px solid #141414;
 }
