@@ -94,10 +94,13 @@ p {
   margin: 154px 129px 0 132px;
 }
 
-.delivery {
+.delivery-wrapper {
   display: flex;
-  width: 1197.67px;
   margin: 0 0 0 71px;
+}
+
+.delivery {
+  max-width: 624px;
 }
 
 .delivery-title {
@@ -127,7 +130,7 @@ p {
 
 /* payment styles */
 
-.payment {
+.payment-wrapper {
   display: flex;
   width: 1097px;
   margin: 200px 0 0 71px;
@@ -138,8 +141,8 @@ p {
   height: 300px;
 }
 
-.payment-wrapper {
-  width: 505px;
+.payment {
+  max-width: 505px;
   margin: 0 0 0 122px;
 }
 
@@ -170,8 +173,7 @@ p {
 }
 
 .join-us_description {
-  width: 1038px;
-  margin: 0 auto;
+  margin: 0 65px 0;
 }
 
 .join-us_cards_wrapper {
@@ -190,55 +192,47 @@ p {
 }
 
 .join-us_sign_image {
-  width: 232px;
-  padding: 71px 75px 0;
+  max-width: 231.78px;
+  margin: 71px 75px 0;
 }
 
 .join-us_shopping_image {
-  width: 244.79px;
-  padding: 61px 69px 0;
+  max-width: 244.23px;
+  margin: 61px 69px 0;
 }
 
 .join-us_export_image {
-  padding: 69px 38px 0;
+  margin: 69px 38px 0;
 }
 
 .join-us_sign_title {
-  margin: 0;
-  padding: 15px 46.5px 0;
+  margin: 15px 46.5px 0;
 }
 
 .join-us_sign_description {
-  margin: 0;
-  padding: 25px 20px 71px;
+  margin: 25px 20px 71px;
   font-size: 16px;
   line-height: 20.8px;
   color: #000;
 }
 
 .join-us_shopping_title {
-  margin: 0;
-  padding: 15px 65px 0;
+  margin: 15px 65px 0;
 }
 
 .join-us_shopping_description {
-  width: 342px;
-  margin: 0;
-  padding: 15px 20px 61px;
+  margin: 15px 20px 61px;
   font-size: 16px;
   line-height: 20.8px;
   color: #000;
 }
 
 .join-us_export_title {
-  margin: 0;
-  padding: 34px 45.5px 0;
+  margin: 34px 45.5px 0;
 }
 
 .join-us_export_description {
-  max-width: 342px;
-  margin: 0;
-  padding: 15px 24px 60px;
+  margin: 15px 24px 60px;
   font-size: 16px;
   line-height: 20.8px;
   color: #000;
@@ -250,12 +244,12 @@ p {
   margin: 221px 68px 0;
 }
 
-.package-consolidation {
+.package-consolidation-wrapper {
   display: flex;
 }
 
-.package-consolidation_wrapper {
-  width: 505px;
+.package-consolidation {
+  max-width: 505px;
   margin-right: 182px;
 }
 
@@ -271,13 +265,13 @@ p {
   margin: 0;
 }
 
-.slimming-parcels {
+.slimming-parcels_wrapper {
   display: flex;
   margin-top: 150px;
 }
 
-.slimming-parcels_wrapper {
-  width: 505px;
+.slimming-parcels {
+  max-width: 505px;
   margin-left: 190px;
 }
 
@@ -293,13 +287,13 @@ p {
   margin: 0;
 }
 
-.taking-pictures {
+.taking-pictures_wrapper {
   display: flex;
   margin-top: 150px;
 }
 
-.taking-pictures_wrapper {
-  width: 505px;
+.taking-pictures {
+  max-width: 505px;
   margin-right: 61px;
 }
 
@@ -317,8 +311,9 @@ p {
 
 .save-money {
   position: relative;
+  max-width: 1170px;
   display: flex;
-  margin-top: 150px;
+  margin: 150px 130px 0;
   top: 45px;
   border-radius: 50px;
   background: linear-gradient(264.66deg, #F2F2F2 21.36%, #E4E4E4 101.02%);;
@@ -346,7 +341,7 @@ p {
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
-  padding: 95px 83px 0 142px;
+  margin: 95px 83px 0 142px;
 }
 
 .also-on_wrapper {
@@ -389,6 +384,10 @@ p {
   color: #141414;
 }
 
+.pages-links:hover {
+  color: #8F8E8E;
+}
+
 .pages-links:nth-last-child(1) {
   margin-bottom: 0;
 }
@@ -407,6 +406,10 @@ p {
   font-size: 14px;
   line-height: 17.07px;
   color: #141414;
+}
+
+.about-us_links:hover {
+  color: #8F8E8E;
 }
 
 .about-us_links:nth-last-child(1) {
@@ -440,4 +443,314 @@ p {
 
 .policy-text:nth-last-child(1) {
   margin-right: 0;
+}
+
+/* responsive styles for mobile */
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 375px;
+  }
+
+  .main {
+    margin: 0;
+  }
+
+  .delivery-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+    margin: 0;
+  }
+
+  .delivery {
+    margin: 0 19px 0;
+  }
+
+  .delivery-title {
+    width: 301px;
+    margin: 0 0 20px;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .delivery-description {
+    width: 243px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+
+  .delivery-image {
+    width: auto;
+  }
+
+  .get-btn .delivery-button {
+    width: 122px;
+    height: 35px;
+  }
+
+  .payment-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    margin: 135px 0 0;
+  }
+
+  .payment {
+    width: auto;
+    margin: 0;
+  }
+
+  .payment-image {
+    width: 335px;
+  }
+
+  .payment-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .payment-description {
+    width: 335px;
+    margin-bottom: 20px;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .get-btn {
+    width: 122px;
+    height: 35px;
+  }
+
+  .join-us {
+    margin-top: 134px;
+    text-align: left;
+  }
+
+  .join-us_title {
+    margin-bottom: 20px;
+  }
+
+  .join-us_description {
+    width: 335px;
+    margin: 0;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .join-us_cards_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .join-us_cards {
+    width: 223px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .join-us_sign_image {
+    width: 135px;
+    margin: 41px 44px 0;
+    padding: 0;
+  }
+
+  .join-us_sign_title {
+    margin: 9px 21px 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .join-us_sign_description {
+    margin: 9px 44px 41px;
+    padding: 0;
+    font-size: 9px;
+    line-height: 11.7px;
+  }
+
+  .join-us_shopping_image {
+    width: 143px;
+    padding: 0;
+    margin: 35px 40px 0;
+  }
+
+  .join-us_shopping_title {
+    margin: 9px 33px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .join-us_shopping_description {
+    width: auto;
+    margin: 9px 28px 35px;
+    padding: 0;
+    font-size: 9px;
+    line-height: 11.7px;
+  }
+
+  .join-us_export_image {
+    width: 179px;
+    padding: 0;
+    margin: 43px 22px 0;
+  }
+
+  .join-us_export_title {
+    margin: 9px 20px 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .join-us_export_description {
+    margin: 9px 14px 43px;
+    padding: 0;
+    font-size: 9px;
+    line-height: 11.7px;
+  }
+
+  .our-service {
+    margin: 70px 0px 0px;
+  }
+
+  .package-consolidation-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .package-consolidation {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .package-consolidation_title {
+    font-size: 10px;
+    line-height: 12.19px;
+  }
+
+  .package-consolidation_subtitle {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .package-consolidation_description {
+    margin-bottom: 20px;
+    font-size: 9px;
+    line-height: 12.6px;
+    text-align: left;
+  }
+
+  .read-more {
+    margin: 0 108px 0;
+  }
+
+  .slimming-parcels_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slimming-parcels {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .slimming-parcels_title {
+    font-size: 10px;
+    line-height: 12.19px;
+  }
+
+  .slimming-parcels_subtitle {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .slimming-parcels_description {
+    margin-bottom: 20px;
+    font-size: 9px;
+    line-height: 12.6px;
+    text-align: left;
+  }
+
+  .taking-pictures_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .taking-pictures {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .taking-pictures_title {
+    font-size: 10px;
+    line-height: 12.19px;
+  }
+
+  .taking-pictures_subtitle {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .taking-pictures_description {
+    margin-bottom: 20px;
+    font-size: 9px;
+    line-height: 12.6px;
+    text-align: left;
+  }
+
+  .save-money {
+    position: initial;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    border-radius: 0;
+    top: 0;
+  }
+
+  .save-money_wrapper {
+    width: auto;
+    margin: 0;
+  }
+
+  .save-money_image {
+    margin: 63px 0 0;
+  }
+
+  .footer {
+    position: absolute;
+  }
+
+  .footer-wrapper {
+    margin: 22px 0 0;
+  }
+
+  .footer-underline {
+    margin-top: 23px;
+  }
+
+  .policy {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .copyright {
+    font-size: 9px;
+    line-height: 10.97px;
+  }
+
+  .policy-links {
+    display: flex;
+  }
+
+  .policy-text {
+    /* margin-right: 0; */
+    font-size: 9px;
+    line-height: 10.97px;
+  }
 }
