@@ -2,6 +2,10 @@
 
 /* reused styles */
 
+.wrapper {
+  width: 1429px;
+}
+
 .about-works_title {
   margin: 0 0 25px;
   font-size: 25px;
@@ -23,6 +27,12 @@
 
 .main {
   margin: 122px 230px 150px;
+}
+
+.main-background {
+  position: absolute;
+  top: 18px;
+  left: 230px;
 }
 
 .how-works {
