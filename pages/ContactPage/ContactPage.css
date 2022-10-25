@@ -81,16 +81,28 @@
 
 .detail-contact_wrapper {
   display: flex;
-  margin: 0 20px 0 23px;
+  margin: 0 20px 30px 23px;
 }
 
 .detail-contact_phone {
   display: flex;
-  margin-right: 128px;
+  margin-right: 125px;
 }
 
-.phone-title {
+.link-title {
   margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #141414;
+}
+
+.detail-contact_link {
+  margin-left: 20px;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #C4C4C4;
 }
 
 .detail-contact_email {
@@ -101,3 +113,5 @@
   display: flex;
   margin: 0 20px 0 23px;
 }
+
+
