@@ -1,0 +1,81 @@
+@import url(../../index.css);
+@import url(../ContactPage/ContactPage.css);
+
+.wrapper {
+  width: 1429px;
+}
+
+.detail-main {
+  position: relative;
+  margin: 122px 199px 50px 203px;
+  z-index: 5;
+}
+
+.detail-background {
+  position: absolute;
+  top: 0;
+}
+
+.detail-package {
+  display: flex;
+}
+
+.greeting-wrapper {
+  margin: 42px 116px 43px 0;
+}
+
+.greeting-title {
+  margin: 0 0 25px;
+}
+
+.greeting-description {
+  margin: 0 0 25px;
+}
+
+.detail-description {
+  margin-top: 50px;
+}
+
+.detail-description_title {
+  margin: 0 0 25px;
+}
+
+.detail-description_description {
+  margin: 0 0 50px;
+}
+
+.grants-wrapper {
+  display: flex;
+}
+
+.grants-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-right: 75px;
+}
+
+.grants-cards:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.grants-cards_title {
+  margin: 22px 0 0;
+}
+
+.grants-cards_description {
+  margin: 10px 0 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  margin: 0 0 150px 203px;
+}
+
+.testimonials {
+  margin-right: 105px;
+}
