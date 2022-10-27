@@ -41,39 +41,39 @@
               <div class="block-2_wrapper">
                 <div class="owner-postal_wrapper">
                   <h4 class="owner-title">Postal Code</h4>
-                  <select class="owner-input_small">
-                    <option value="">Serbia</option>
-                  </select>
+                  <input class="owner-input_small" type="text" placeholder="11122">
                 </div>
                 <div class="owner-package_wrapper">
                   <h4 class="owner-title">Package Weight</h4>
-                  <select class="owner-input">
-                    <option value="">Beograd</option>
-                  </select>
+                  <input class="weight-input" type="text" placeholder="0.9">
                 </div>
               </div>
               <h4 class="package-title">Package Value</h4>
-              <input class="package-input" type="text" value1="100"/>
+              <input class="package-input" type="text" placeholder="100"/>
               <div class="package-insure_wrapper">
-                <input type="checkbox" id="scales" name="scales" checked />
-                <p class="package-insure_description">do you want to insure the package?</p>
-              </div>
-              <div class="shipping-size_wrapper">
-                <div class="shipping-wrapper">
-                  <button class="shipping-btn">+</button>
-                  <p class="shipping-description">
-                    I want to enter shipping sizes
-                  </p>
-                </div>
-                <div class="size-tabel_wrapper">
-                  <p class="size-tabel_title">L</p>
-                  <input class="size-tabel_input" type="text" value="10">
-                  <p class="size-tabel_title">W</p>
-                  <input class="size-tabel_input" type="text" value="10">
-                  <input class="size-tabel_input" type="text" value="10">
-                  <select class="size-tabel_type">
-                    <option value="">CM</option>
-                  </select>
+                <button class="accordion-button">
+                  <input class="input-size" type="checkbox" id="scales" name="scales" />
+                  <label class="package-insure_description" for="">do you want to insure the package?</label>
+                </button>
+                <div class="panel">
+                  <div class="shipping-wrapper">
+                    <button class="shipping-btn">+</button>
+                    <p class="shipping-description">
+                      I want to enter shipping sizes
+                    </p>
+                  </div>
+                  <div class="size-table_wrapper">
+                    <p class="size-table_title">L</p>
+                    <input class="size-table_input" type="text" placeholder="10">
+                    <p class="size-table_title">W</p>
+                    <input class="size-table_input" type="text" placeholder="10">
+                    <p class="size-table_title">H</p>
+                    <input class="size-table_input" type="text" placeholder="10">
+                    <select class="size-table_type">
+                      <option>CM</option>
+                      <option>M</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <button class="get-btn calculator-btn">Check Your Price</button>
@@ -131,5 +131,6 @@
         </div>
       </footer>
     </div>
+    <script src="../CalculatorPage/Calculator.js"></script>
   </body>
 </html>
