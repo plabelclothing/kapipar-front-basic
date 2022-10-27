@@ -23,16 +23,18 @@
   margin: 0;
 }
 
-/* main styles */
-
-.main {
-  margin: 122px 230px 150px;
-}
-
 .main-background {
   position: absolute;
   top: 18px;
-  left: 230px;
+  z-index: 0;
+}
+
+/* main styles */
+
+.main {
+  position: relative;
+  margin: 122px 230px 150px;
+  z-index: 5;
 }
 
 .how-works {
