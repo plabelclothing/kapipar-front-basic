@@ -115,6 +115,39 @@
   margin-right: 20px;
 }
 
+.icon-instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/instagram-icon.svg);
+}
+
+.icon-instagram:hover,
+.icon-instagram:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/facebook-icon.svg);
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-tiktok {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/tiktok-icon.svg);
+}
+
+.icon-tiktok:hover,
+.icon-tiktok:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
 .social-icon:nth-last-child(1) {
   margin-right: 0;
 }
