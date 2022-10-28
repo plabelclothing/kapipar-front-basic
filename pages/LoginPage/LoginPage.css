@@ -84,10 +84,15 @@
 }
 
 .forgot {
+  margin: 14px 0 12px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
   color: #141414;
+}
+
+.forgot:hover {
+  color: #8C8C8C;
 }
 
 .login-btn {
@@ -107,4 +112,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.description-biggest:hover {
+  color: #8C8C8C;
 }
