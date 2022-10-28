@@ -60,6 +60,7 @@
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
   border-radius: 5px;
+  color: #141414;
 }
 
 .owner-input_small {
@@ -71,6 +72,7 @@
 }
 
 .weight-input {
+  width: 198px;
   padding: 10px 10px 10px;
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
@@ -136,6 +138,7 @@
 }
 
 .panel {
+  display: none;
   padding: 10px 10px 10px;
   background: #F5F5F5;
   border: 1px solid #E4E4E4;
@@ -176,8 +179,10 @@
 }
 
 .size-table_type {
-  padding: 9px 10px 10px;
-  color: #141414;
+  padding: 10px 10px 10px;
+  background: #FFFFFF;
+  border: 1px solid #8F8E8E;
+  border-radius: 5px;
 }
 
 .calculator-btn {
