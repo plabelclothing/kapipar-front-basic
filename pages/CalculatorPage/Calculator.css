@@ -122,12 +122,12 @@
   color: #141414;
 }
 
-.input-size {
+.button-size {
   width: 24px;
   height: 24px;
 }
 
-.accordion-button {
+.package-insure_btn {
   display: flex;
   align-items: center;
   margin-bottom: 11px;
@@ -137,8 +137,7 @@
   transition: 0.4s;
 }
 
-.panel {
-  display: none;
+.shipping-wrapper {
   padding: 10px 10px 10px;
   background: #F5F5F5;
   border: 1px solid #E4E4E4;
@@ -146,11 +145,12 @@
   overflow: hidden;
 }
 
-.shipping-wrapper {
+.shipping {
   display: flex;
 }
 
-.shipping-btn {
+.shipping-button {
+  font-size: 22px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -158,6 +158,11 @@
 
 .shipping-description {
   margin: 0 0 0 20px;
+  color: #141414;
+}
+
+.size-panel {
+  display: none;
 }
 
 .size-table_wrapper {
@@ -183,6 +188,7 @@
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
   border-radius: 5px;
+  color: #141414;
 }
 
 .calculator-btn {

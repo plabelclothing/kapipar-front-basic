@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion-button");
+var acc = document.getElementsByClassName("shipping");
 var i;
 
 for (i = 0; i < acc.length; i++) {
