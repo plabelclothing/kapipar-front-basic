@@ -24,6 +24,10 @@
   text-align: center;
 }
 
+.red-dot {
+  color: #f00;
+}
+
 .login-information_wrapper {
   display: flex;
   margin-bottom: 80px;
@@ -82,4 +86,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 19.5px;
+}
+
+.description-biggest:hover {
+  color: #8F8E8E;
 }
