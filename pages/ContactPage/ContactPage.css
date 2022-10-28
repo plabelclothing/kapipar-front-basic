@@ -89,6 +89,10 @@
   margin-right: 125px;
 }
 
+.detail-image {
+  width: 18px;
+}
+
 .link-title {
   margin: 0;
   font-weight: 700;
@@ -101,7 +105,7 @@
   margin-left: 20px;
   font-weight: 400px;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 20.8px;
   color: #C4C4C4;
 }
 
