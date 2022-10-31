@@ -28,17 +28,10 @@
   color: #f00;
 }
 
-.login-information_wrapper {
+.contact-information_wrapper {
   display: flex;
   margin-bottom: 80px;
-}
-
-.contact-information_wrapper {
-  margin-right: 32px;
-}
-
-.contact-information_title {
-  margin: 0 0 42px;
+  justify-content: center;
 }
 
 .data-title {
@@ -60,17 +53,27 @@
   margin-bottom: 0;
 }
 
-.data-input_big {
-  width: 538px;
-  padding: 12px 14px 95px;
+.rules-wrapper {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
-  border: 1px solid #8F8E8E;
-  border-radius: 5px;
+}
+
+.rules-input {
+  width: 24px;
+  height: 24px;
+}
+
+.rules-description {
+  margin-left: 10px;
+}
+
+.rules-description:hover {
+  color: #8F8E8E;
 }
 
 .register-btn {
   width: 555px;
-  margin: 0 auto;
 }
 
 .register-description {
