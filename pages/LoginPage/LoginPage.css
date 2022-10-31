@@ -12,6 +12,12 @@
   border-radius: 30px;
 }
 
+.logo-image {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
 .greeting {
   padding: 53px 64px 20px 59px;
   border-radius: 20px 0px 0px 20px;
@@ -32,6 +38,7 @@
 }
 
 .login {
+  position: relative;
   padding: 49px 58px 52px;
   border-radius: 0px 20px 20px 0px;
 }
@@ -40,6 +47,25 @@
   margin: 0 0 20px;
   font-size: 25px;
   line-height: 30.48px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 36px;
+  top: 40px;
+  border: 0;
+}
+
+.close-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icons/close-btn.svg);
+  cursor: pointer;
+}
+
+.close-icon:hover,
+.close-icon:focus {
+  filter: invert(60%) sepia(11%) saturate(7%) hue-rotate(2deg) brightness(91%) contrast(86%);
 }
 
 .login-window {
