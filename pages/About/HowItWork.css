@@ -161,3 +161,11 @@
   justify-content: space-between;
   padding: 23px 69px 25px;
 }
+
+.privacy-policy_wrapper {
+  display: flex;
+}
+
+.policy-text:hover {
+  color: #8F8E8E;
+}
