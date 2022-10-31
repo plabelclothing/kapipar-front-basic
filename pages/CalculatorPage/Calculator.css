@@ -125,16 +125,13 @@
 .button-size {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .package-insure_btn {
   display: flex;
   align-items: center;
   margin-bottom: 11px;
-  background: transparent;
-  cursor: pointer;
-  border: none;
-  transition: 0.4s;
 }
 
 .shipping-wrapper {
