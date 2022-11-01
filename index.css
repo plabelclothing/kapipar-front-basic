@@ -34,6 +34,7 @@ ul {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #FFFFFF inset;
+  cursor: pointer;
 }
 
 .get-btn:hover {
@@ -51,6 +52,7 @@ ul {
   font-size: 14px;
   line-height: 17.07px;
   color: #FFE145;
+  cursor: pointer;
 }
 
 .arrows {
@@ -336,36 +338,82 @@ p {
 
 .footer {
   background: #FAFAFA;
-  padding: 95px 69px 25px 82px;
+  padding: 95px 83px 25px 142px;
 }
-
-.footer-wrapper {
+.link-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
 
-.also-on_wrapper {
-  width: 190px;
+.also-title {
+  margin: 0 0 10px;
 }
 
-.also-on_title {
-  margin: 0 0 0 3px;
-}
-
-.also-on_underline {
+.also-underline {
   width: 50px;
-  margin: 10px 0 0;
-  border-top: 2px solid #141414;
+  height: 2px;
+  margin: 0;
+  background-color: #141414;
 }
 
-.also-on_socials {
-  margin-top: 50px;
-}
 
 .social-media {
+  display: flex;
+  margin-top: 50px;
+  padding-right: 20px;
+}
+
+.social-icon {
+  margin-right: 20px;
+}
+
+.icon-instagram {
   width: 24px;
   height: 24px;
-  margin-right: 10px;
+  background-image: url(../../assets/icons/instagram-icon.svg);
+}
+
+.icon-instagram:hover,
+.icon-instagram:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/facebook-icon.svg);
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-tiktok {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/tiktok-icon.svg);
+}
+
+.icon-tiktok:hover,
+.icon-tiktok:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.social-icon:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.also-links {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.also-links:hover {
+  color: #8F8E8E;
 }
 
 .pages {
@@ -377,21 +425,6 @@ p {
   margin: 0 0 15px;
 }
 
-.pages-links {
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 17.07px;
-  color: #141414;
-}
-
-.pages-links:hover {
-  color: #8F8E8E;
-}
-
-.pages-links:nth-last-child(1) {
-  margin-bottom: 0;
-}
-
 .about-us {
   display: flex;
   flex-direction: column;
@@ -401,49 +434,37 @@ p {
   margin: 0 0 15px;
 }
 
-.about-us_links {
-  margin-bottom: 5px;
-  font-size: 14px;
-  line-height: 17.07px;
-  color: #141414;
+.underline {
+  margin: 0;
 }
 
-.about-us_links:hover {
-  color: #8F8E8E;
-}
-
-.about-us_links:nth-last-child(1) {
-  margin-bottom: 0;
-}
-
-.footer-underline {
-  max-width: 1280px;
-  margin-top: 46px;
-}
-
-.policy {
+.сonfidentiality {
   display: flex;
   justify-content: space-between;
-  margin: 23px 76px 0;
+  padding-top: 25px;
 }
 
 .copyright {
   margin: 0;
   font-size: 16px;
-  line-height: 20px;
-  color: #141414;
+  line-height: 19.5px;
+}
+
+.privacy-policy_wrapper {
+  width: 312px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .policy-text {
-  margin-right: 50px;
   font-size: 14px;
-  line-height: 17px;
-  color: #141414;
+  line-height: 17.07px;
 }
 
-.policy-text:nth-last-child(1) {
-  margin-right: 0;
+.policy-text:hover {
+  color: #8F8E8E;
 }
+
 
 /* responsive styles for mobile */
 
@@ -763,15 +784,19 @@ p {
     padding: 20px 0 0;
   }
 
-  .footer-wrapper {
+  .link-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: inherit;
     padding: 0 30px 0;
   }
 
-  .also-on_socials {
+  .social-media {
     margin-top: 30px;
+  }
+
+  .also-on {
+    margin-right: 50px;
   }
 
   .pages {
@@ -784,14 +809,9 @@ p {
     margin-left: 40px;
   }
 
-  .footer-underline {
-    margin-top: 23px;
-  }
-
-  .policy {
-    display: flex;
-    justify-content: space-around;
+  .сonfidentiality {
     margin: 0;
+    padding: 10px 20px 17px;
   }
 
   .copyright {
@@ -799,12 +819,11 @@ p {
     line-height: 10.97px;
   }
 
-  .policy-links {
-    display: flex;
+  .privacy-policy_wrapper {
+    width: 200px;
   }
 
   .policy-text {
-    /* margin-right: 0; */
     font-size: 9px;
     line-height: 10.97px;
   }

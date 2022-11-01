@@ -86,86 +86,104 @@
   margin-left: 78px;
 }
 
-/* footer styles */
+/* mobile view */
 
-.link-wrapper {
-  display: flex;
-  justify-content: space-around;
-  padding: 95px 142px 47px;
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .main-background {
+    top: 32px;
+    z-index: 0;
+    width: 420px;
+  }
+
+  .main {
+    margin: 20px 20px 70px;
+  }
+
+  .how-works {
+    margin: 0;
+  }
+
+  .how-works_title {
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .how-works_description {
+    margin: 0 0 20px;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .sing-up_wrapper {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    margin-top: 70px;
+  }
+
+  .sing-up {
+    margin: 0;
+  }
+
+  .sing-up_image {
+    position: absolute;
+    width: 301px;
+    margin: 0 20px 0;
+    top: 86px;
+  }
+
+  .about-works_title {
+    margin: 0 0 20px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about-works_subtitle {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20.8px;
+  }
+
+  .about-works_description {
+    margin-top: 288px;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .shop-in_wrapper {
+    position: relative;
+    flex-flow: column;
+  }
+
+  .shop-in {
+    margin: 0;
+  }
+
+  .shop-in_image {
+    position: absolute;
+    width: 305px;
+    top: 112px;
+    margin: 0 35px 0;
+  }
+
+  .sending-wrapper {
+    position: relative;
+    flex-flow: column;
+  }
+
+  .sending {
+    margin: 0;
+  }
+
+  .sending-image {
+    position: absolute;
+    margin: 0 20px 0;
+    top: 142px;
+  }
 }
 
-.also-title {
-  margin: 0 0 10px;
-}
-
-.also-underline {
-  width: 50px;
-  height: 2px;
-  margin: 0;
-  background-color: #141414;
-}
-
-.social-media {
-  display: flex;
-  margin-top: 50px;
-  padding-right: 20px;
-}
-
-.social-icon {
-  margin-right: 20px;
-}
-
-.icon-instagram {
-  width: 24px;
-  height: 24px;
-  background-image: url(../../assets/icons/instagram-icon.svg);
-}
-
-.icon-instagram:hover,
-.icon-instagram:focus {
-  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
-}
-
-.icon-facebook {
-  width: 24px;
-  height: 24px;
-  background-image: url(../../assets/icons/facebook-icon.svg);
-}
-
-.icon-facebook:hover,
-.icon-facebook:focus {
-  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
-}
-
-.icon-tiktok {
-  width: 24px;
-  height: 24px;
-  background-image: url(../../assets/icons/tiktok-icon.svg);
-}
-
-.icon-tiktok:hover,
-.icon-tiktok:focus {
-  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
-}
-
-.social-icon:nth-last-child(1) {
-  margin-right: 0;
-}
-
-.underline {
- margin: 0 69px 0;
-}
-
-.сonfidentiality {
-  display: flex;
-  justify-content: space-between;
-  padding: 23px 69px 25px;
-}
-
-.privacy-policy_wrapper {
-  display: flex;
-}
-
-.policy-text:hover {
-  color: #8F8E8E;
-}
