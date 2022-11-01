@@ -449,7 +449,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .wrapper {
-    width: 375px;
+    width: auto;
   }
 
   .main {
@@ -482,7 +482,7 @@ p {
 
   .delivery-image {
     position: relative;
-    width: 578px;
+    width: auto;
     right: 26px;
   }
 
