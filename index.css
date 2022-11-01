@@ -549,7 +549,7 @@ p {
   .join-us_cards_wrapper {
     display: flex;
     flex-direction: column;
-    margin: 20px 50px 0;
+    align-items: center;
   }
 
   .join-us_cards {
@@ -671,7 +671,7 @@ p {
   }
 
   .slimming-parcels {
-    margin: 0 auto;
+    margin: 0;
   }
 
   .slimming-parcels_title {
@@ -693,9 +693,10 @@ p {
 
   .slimming-parcels_description {
     width: 335px;
+    margin: 254px 0 24px;
     font-size: 9px;
     line-height: 12.6px;
-    margin: 254px 0 24px;
+    text-align: left;
   }
 
   .taking-pictures_wrapper {
