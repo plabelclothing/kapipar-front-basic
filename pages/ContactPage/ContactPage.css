@@ -1,0 +1,117 @@
+@import url(../../index.css);
+@import url(../AboutPage/AboutFaq.css);
+
+.wrapper {
+  width: 1429px;
+}
+
+.contact-background {
+  position: absolute;
+  top: 2px;
+}
+
+.contact-title {
+  margin: 171px 0 0;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  margin: 50px 171px 178px 130px;
+}
+
+.contact-image {
+  margin: 73px 0 73px;
+}
+
+.contact-data_wrapper {
+  margin-left: 61px;
+}
+
+.contact-subtitle {
+  margin: 0 0 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #141414;
+}
+
+.contact-input_title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: #141414;
+}
+
+.contact-input {
+  width: 570px;
+  height: 47px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.email-phone_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-phone_input {
+  width: 270px;
+}
+
+.message-input {
+  height: 120px;
+}
+
+.detail-wrapper {
+  display: flex;
+  margin: 0 162px 150px 130px;
+}
+
+.detail {
+  margin-right: 66px;
+  padding: 28px 0 29px;
+}
+
+.detail-title {
+  margin: 20px 28px 30px;
+}
+
+.detail-contact_wrapper {
+  display: flex;
+  margin: 0 20px 30px 23px;
+}
+
+.detail-contact_phone {
+  display: flex;
+  margin-right: 125px;
+}
+
+.link-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #141414;
+}
+
+.detail-contact_link {
+  margin-left: 20px;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 32px;
+  color: #C4C4C4;
+}
+
+.detail-contact_email {
+  display: flex;
+}
+
+.detail-email_wrapper {
+  display: flex;
+  margin: 0 20px 0 23px;
+}
+
+

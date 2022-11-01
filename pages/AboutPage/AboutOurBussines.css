@@ -1,0 +1,84 @@
+@import url(../../index.css);
+@import url(../AboutPage/AboutFaq.css);
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 122px 273px 100px;
+}
+
+.AboutOurBussines-background {
+  position: absolute;
+  top: 4px;
+}
+
+.title {
+  margin: 0 0 25px;
+}
+
+.description {
+  margin: 0;
+}
+
+/* main-ourbussines styles */
+
+.main-ourbussines {
+  margin: 0 203px 150px;
+}
+
+.ourbussines-image_wrapper {
+  display: flex;
+  margin: 0 13px 0;
+}
+
+.word-wrapper {
+  margin-right: 40px;
+}
+
+.word-title {
+  margin: 10px 0 10px;
+}
+
+.word-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+.some-text {
+  margin: 50px 0 0;
+}
+
+.some-description {
+  margin: 15px 0 0;
+}
+
+.cube-wrapper {
+  display: flex;
+  margin: 49px 0 150px;
+}
+
+.cube {
+  margin-right: 73px;
+  border-radius: 20px;
+  background-color: #141414;
+}
+
+.cube:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.cube-title {
+  margin: 20px 20px 3px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.cube-description {
+  margin: 0 20px 0;
+  color: #fff;
+  font-size: 70px;
+  line-height: 84.72px;
+}
