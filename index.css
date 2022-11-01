@@ -754,7 +754,7 @@ p {
 
   .save-money_image {
     margin: 64px 0 0;
-    width: 425px;
+    width: auto;
     position: relative;
     right: 8px;
   }
