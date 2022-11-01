@@ -23,16 +23,18 @@
   margin: 0;
 }
 
-/* main styles */
-
-.main {
-  margin: 122px 230px 150px;
-}
-
 .main-background {
   position: absolute;
   top: 18px;
-  left: 230px;
+  z-index: 0;
+}
+
+/* main styles */
+
+.main {
+  position: relative;
+  margin: 122px 230px 150px;
+  z-index: 5;
 }
 
 .how-works {
@@ -113,6 +115,39 @@
   margin-right: 20px;
 }
 
+.icon-instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/instagram-icon.svg);
+}
+
+.icon-instagram:hover,
+.icon-instagram:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/facebook-icon.svg);
+}
+
+.icon-facebook:hover,
+.icon-facebook:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
+.icon-tiktok {
+  width: 24px;
+  height: 24px;
+  background-image: url(../../assets/icons/tiktok-icon.svg);
+}
+
+.icon-tiktok:hover,
+.icon-tiktok:focus {
+  filter: invert(56%) sepia(2%) saturate(3%) hue-rotate(320deg) brightness(100%) contrast(93%);
+}
+
 .social-icon:nth-last-child(1) {
   margin-right: 0;
 }
@@ -125,4 +160,12 @@
   display: flex;
   justify-content: space-between;
   padding: 23px 69px 25px;
+}
+
+.privacy-policy_wrapper {
+  display: flex;
+}
+
+.policy-text:hover {
+  color: #8F8E8E;
 }
