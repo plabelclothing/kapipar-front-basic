@@ -336,12 +336,12 @@ p {
 
 .footer {
   background: #FAFAFA;
+  padding: 95px 69px 25px 82px;
 }
 
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
-  margin: 95px 83px 0 142px;
 }
 
 .also-on_wrapper {
@@ -424,7 +424,7 @@ p {
 .policy {
   display: flex;
   justify-content: space-between;
-  margin: 23px 76px 15px;
+  margin: 23px 76px 0;
 }
 
 .copyright {
