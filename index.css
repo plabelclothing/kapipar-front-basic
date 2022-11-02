@@ -232,21 +232,16 @@ p {
 }
 
 .header-logo {
-  display: flex;
-  align-items: center;
+  margin: 3px 0 4px;
 }
 
 .logo-icon {
   height: 40px;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .navigation-menu {
+  align-items: center;
+  display: flex;
   list-style: none;
   margin: 0;
   padding-left: 0;
@@ -264,9 +259,8 @@ p {
   transition-duration: 0.5s;
 }
 
-.menu-item:hover,
-.menu-item:focus-within {
-  cursor: pointer;
+.navigation-menu .menu-item a:hover {
+  color: #8F8E8E;
 }
 
 .navigation-menu .menu-item .dropdown {
@@ -294,6 +288,20 @@ p {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.navigation-btn {
+  width: 115px;
+  height: 47px;
+  margin-right: 40px;
+}
+
+.navigation-btn:nth-child(2) {
+  margin-right: 0;
 }
 
 /* delivery styles */
