@@ -255,7 +255,7 @@ p {
 .menu-item {
   display: block;
   float: left;
-  padding: 15px 25px 0 15px;
+  padding: 0 25px 0 15px;
   position: relative;
   font-weight: 700;
   font-size: 14px;
