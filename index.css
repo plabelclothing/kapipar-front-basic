@@ -560,6 +560,7 @@ p {
   }
 
   .header {
+    display: block;
     margin: 16px 21px 16px;
   }
 
