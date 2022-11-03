@@ -639,8 +639,8 @@ p {
     align-items: end;
     padding: 48px 18px 145px 18px;
     top: 72px;
-    right: -100%;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     list-style: none;
     background: #FFFFFF;
     border-radius: 0px;
