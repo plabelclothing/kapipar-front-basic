@@ -564,7 +564,7 @@ p {
   }
 
   .logo-icon {
-    height: 26px;
+    height: 28px;
   }
 
   #menu-toggle {
@@ -588,7 +588,7 @@ p {
 
   .menu-btn {
     position: fixed;
-    top: 32px;
+    top: 34px;
     right: 20px;
     width: 26px;
     height: 26px;
@@ -609,12 +609,12 @@ p {
 
   .menu-btn > span::before {
     content: '';
-    top: -7px;
+    top: -8px;
   }
 
   .menu-btn > span::after {
     content: '';
-    top: 6px;
+    top: 8px;
   }
 
   .navigation-menu {
