@@ -568,10 +568,10 @@ p {
     position: relative;
   }
 
-  .logo-icon {
+  /* .logo-icon {
     display: inline-block;
     height: 24px;
-  }
+  } */
 
   #menu-toggle {
     opacity: 0;
