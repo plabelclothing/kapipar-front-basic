@@ -96,7 +96,7 @@ p {
 }
 
 .scroll-active {
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* footer styles */
