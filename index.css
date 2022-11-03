@@ -595,6 +595,7 @@ p {
     position: absolute;
     right: 20px;
     width: 26px;
+    height: 26px;
     cursor: pointer;
     z-index: 1;
   }
