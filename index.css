@@ -569,7 +569,8 @@ p {
   }
 
   .logo-icon {
-    height: 34px;
+    display: inline-block;
+    height: 24px;
   }
 
   #menu-toggle {
