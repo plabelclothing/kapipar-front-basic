@@ -304,6 +304,10 @@ p {
   margin-right: 0;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 /* delivery styles */
 
 .main {
@@ -560,7 +564,7 @@ p {
   }
 
   .logo-icon {
-    height: 24px;
+    height: auto;
   }
 
   #menu-toggle {
@@ -615,13 +619,14 @@ p {
 
   .navigation-menu {
     position: fixed;
+    width: 238px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
-    right: -100%;
-    width: 238px;
-    height: 100%;
     padding: 48px 18px 0 18px;
+    top: 72px;
+    right: -100%;
     overflow: hidden;
     list-style: none;
     background: #FFFFFF;
