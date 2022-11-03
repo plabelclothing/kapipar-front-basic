@@ -565,6 +565,7 @@ p {
 
   .header {
     margin: 16px 21px 16px;
+    position: relative;
   }
 
   .logo-icon {
@@ -591,11 +592,9 @@ p {
   }
 
   .menu-btn {
-    position: fixed;
-    top: 34px;
+    position: absolute;
     right: 20px;
     width: 26px;
-    height: 26px;
     cursor: pointer;
     z-index: 1;
   }
