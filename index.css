@@ -95,6 +95,10 @@ p {
   color: #8F8E8E;
 }
 
+.scroll-active {
+  overflow: scroll;
+}
+
 /* footer styles */
 
 .footer {
