@@ -228,7 +228,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 129px 28px 132px;
+  margin: 30px 129px 28px 132px;
 }
 
 .header-logo {
@@ -555,6 +555,121 @@ p {
     width: auto;
   }
 
+  .header {
+    margin: 16px 21px 16px;
+  }
+
+  .logo-icon {
+    height: 24px;
+  }
+
+  #menu-toggle {
+    opacity: 0;
+  }
+  #menu-toggle:checked + .menu-btn > span {
+    transform: rotate(45deg);
+  }
+  #menu-toggle:checked + .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu-toggle:checked + .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu-toggle:checked ~ .navigation-menu {
+    right: 0 !important;
+    z-index: 5;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 32px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+
+  .menu-btn > span::before {
+    content: '';
+    top: -7px;
+  }
+
+  .menu-btn > span::after {
+    content: '';
+    top: 6px;
+  }
+
+  .navigation-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    right: -100%;
+    width: 238px;
+    height: 100%;
+    padding: 48px 18px 0 18px;
+    overflow: hidden;
+    list-style: none;
+    background: #FFFFFF;
+    border-radius: 0px;
+    transition-duration: .25s;
+  }
+
+  .menu-item {
+    display: contents;
+    padding: 0;
+    float: right;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 50px;
+    align-items: end;
+  }
+
+  .navigation-btn {
+    margin: 0 0 10px;
+  }
+
+  .navigation-btn:nth-last-child(1) {
+    margin: 0;
+  }
+
+  .navigation-menu .menu-item:hover > .dropdown, .navigation-menu .menu-item:focus-within > .dropdown, .navigation-menu .menu-item .dropdown:hover, .navigation-menu .menu-item .dropdown:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .navigation-menu .menu-item .dropdown {
+    position: relative;
+  }
+
+  .menu-item_link {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+  }
+
   .main {
     margin: 0 auto;
   }
@@ -587,6 +702,7 @@ p {
     position: relative;
     width: auto;
     right: 26px;
+    z-index: 1;
   }
 
   .get-btn .delivery-button {
