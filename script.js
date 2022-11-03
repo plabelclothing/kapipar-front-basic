@@ -4,6 +4,6 @@ if (iconMenu) {
   iconMenu.addEventListener('click', function (e) {
     const HamMenu = document.querySelector('.hamburger-menu');
     document.body.classList.toggle('_lock');
-    HamMenu.classList.toggle('.scroll-active')
+    HamMenu.classList.toggle('.scroll-active');
   })
 }
