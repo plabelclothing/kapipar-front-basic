@@ -282,9 +282,9 @@ p {
 .navigation-menu .menu-item:focus-within > .dropdown,
 .navigation-menu .menu-item .dropdown:hover,
 .navigation-menu .menu-item .dropdown:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
 
 .navigation-menu .menu-item .dropdown .dropdown-item {
@@ -632,7 +632,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding: 48px 18px 0 18px;
+    padding: 48px 18px 145px 18px;
     top: 72px;
     right: -100%;
     overflow: hidden;
