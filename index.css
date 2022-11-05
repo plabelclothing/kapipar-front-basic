@@ -595,7 +595,7 @@ p {
     top: 0;
     transform: rotate(90deg);
   }
-  #menu-toggle:checked ~ .navigation-menu {
+  #menu-toggle:checked ~ .navigation-menu_wrapper {
     right: 0 !important;
     z-index: 5;
   }
@@ -630,19 +630,25 @@ p {
     top: 8px;
   }
 
-  .navigation-menu {
+  .navigation-menu_wrapper {
     position: fixed;
     width: 238px;
+    height: 100%;
+    top: 72px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #FFFFFF;
+  }
+
+  .navigation-menu {
+    position: absolute;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: end;
     padding: 48px 18px 145px 18px;
-    top: 72px;
     overflow-x: hidden;
     overflow-y: auto;
-    list-style: none;
-    background: #FFFFFF;
     border-radius: 0px;
     transition-duration: .25s;
   }
