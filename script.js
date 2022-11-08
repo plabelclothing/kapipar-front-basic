@@ -49,7 +49,7 @@ if (isMobile.any()) {
 
 const iconMenu = document.querySelector('.menu-icon');
 if (iconMenu) {
-  const menuBurger = document.querySelector('.menu-body');
+  const menuBurger = document.querySelector('.menu-body_wrapper');
   iconMenu.addEventListener('click', function(e) {
     document.body.classList.toggle('lock');
     iconMenu.classList.toggle('active');

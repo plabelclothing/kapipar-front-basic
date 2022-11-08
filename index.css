@@ -618,6 +618,7 @@ body.touch .burger-arrow {
   }
 
   .header {
+    position: relative;
     margin: 16px 16px 16px 21px;
   }
 
@@ -678,20 +679,29 @@ body.touch .burger-arrow {
     transform: rotate(45deg) translate(0px, 50%);
   }
 
-  .menu-body {
+  .menu-body_wrapper {
     position: fixed;
     top: 60px;
     right: -100%;
     width: 65%;
     height: 100%;
-    padding: 48px 18px 143px 7px;
     background-color: #FFF;
     z-index: 5;
     transition: right 0.3s ease 0s;
     overflow: auto;
   }
 
-  .menu-body.active {
+  .menu-body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 48px 18px 143px 7px;
+    background-color: #FFF;
+    z-index: 4;
+    overflow: auto;
+  }
+
+  .menu-body_wrapper.active {
     right: 0;
   }
 
