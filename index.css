@@ -699,6 +699,7 @@ body.touch .burger-arrow {
     display: flex;
     flex-direction: column;
     align-items: end;
+    overflow: scroll;
   }
 
   .menu-list > li {
