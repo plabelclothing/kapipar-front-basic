@@ -678,7 +678,7 @@ body.touch .burger-arrow {
     right: -100%;
     width: 65%;
     height: 100%;
-    padding: 48px 18px 0 7px;
+    padding: 48px 18px 143px 7px;
     background-color: #FFF;
     z-index: 5;
     transition: right 0.3s ease 0s;
@@ -733,15 +733,25 @@ body.touch .burger-arrow {
 
   .hide-menu {
     width: 206px;
-    height: 187px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
     margin-bottom: 16px;
-    padding: 5px;
+    padding: 15px;
     background: #F7F7F7;
     border-radius: 5px;
+  }
+
+  .hide-menu_link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hide-menu_link:last-child {
+    margin-bottom: 0;
+    margin-top: 56px;
   }
 
   .main {
