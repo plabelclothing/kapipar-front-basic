@@ -240,6 +240,7 @@ p {
 .logo {
   height: 40px;
   margin: 3px 0 4px;
+  object-fit: contain;
 }
 
 .header-wrapper {
