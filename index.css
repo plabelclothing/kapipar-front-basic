@@ -695,7 +695,7 @@ body.touch .burger-arrow {
 
   .menu-body {
     position: absolute;
-    padding: 48px 18px 600px 7px;
+    padding: 48px 18px 200px 7px;
     background-color: #FFF;
     overflow-x: hidden;
     overflow-y: auto;
