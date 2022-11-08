@@ -688,17 +688,18 @@ body.touch .burger-arrow {
     background-color: #FFF;
     z-index: 5;
     transition: right 0.3s ease 0s;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .menu-body {
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 48px 18px 143px 7px;
+    padding: 48px 18px 600px 7px;
     background-color: #FFF;
-    z-index: 4;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .menu-body_wrapper.active {
@@ -709,7 +710,6 @@ body.touch .burger-arrow {
     display: flex;
     flex-direction: column;
     align-items: end;
-    overflow: scroll;
   }
 
   .menu-list > li {
