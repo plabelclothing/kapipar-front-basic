@@ -233,7 +233,12 @@ p {
 }
 
 .header-logo {
-  height: 38px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 40px;
   margin: 3px 0 4px;
 }
 
@@ -615,7 +620,7 @@ body.touch .burger-arrow {
     margin: 16px 16px 16px 21px;
   }
 
-  .header-logo {
+  .logo {
     height: 24px;
     margin: 0;
   }
