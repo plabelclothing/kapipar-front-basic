@@ -147,3 +147,35 @@
 .description-biggest:hover {
   color: #8C8C8C;
 }
+
+/* media 768px */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .logo-image {
+    display: none;
+  }
+
+  .greeting {
+    display: none;
+  }
+
+  .login {
+    padding: 20px 20px 20px;
+  }
+
+  .login-input {
+    width: 300px;
+  }
+
+  .login-btn {
+    width: 350px;
+  }
+
+  .login-footer_description {
+    margin: 55px 50px 0;
+  }
+}
