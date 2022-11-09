@@ -28,6 +28,8 @@ const isMobile = {
   },
 };
 
+// arrows
+
 if (isMobile.any()) {
   document.body.classList.add('touch');
 

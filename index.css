@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+body {
+  overflow-x: hidden;
+}
+
 /* reused styles */
 
 .wrapper {
@@ -93,6 +97,144 @@ p {
   font-size: 18px;
   line-height: 25.2px;
   color: #8F8E8E;
+}
+
+/* header styles */
+
+.header {
+  padding: 30px 129px 28px 132px;
+}
+
+.header-logo {
+  width: 141px;
+  height: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list > li {
+  position: relative;
+  margin: 0 0 0 20px;
+}
+
+.menu-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu-link:hover {
+  color: #8F8E8E;
+}
+
+.menu-btn {
+  margin-left: 40px;
+}
+
+.menu-sub_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 15px;
+  max-width: 200px;
+}
+
+.menu-sub_list li {
+  margin-bottom: 20px;
+}
+
+.menu-sub_list li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-sub_link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.menu-sub_link:hover {
+  color: #8F8E8E;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+/* -------------------- */
+
+body.pc .menu-list > li:hover .menu-sub_list { /**** проблема бокового скролла тут, позже глянуть! ****/
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body.touch .menu-list > li.active .menu-sub_list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body.touch .menu-list > li.active .burger-arrow {
+  transform: rotate(180deg);
+  transition: all 0.3s ease 0s;
+}
+
+body.touch .burger-arrow {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  margin-left: 7px;
+  background-image: url(../assets/icons/dropdown-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------------------- */
+
+@media (min-width: 1024px) {
+  .menu-list {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-sub_list {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .menu-arrow_icon::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 8px;
+    margin-left: 7px;
+    background-image: url(../assets/icons/dropdown-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu-arrow_icon:hover::after {
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+  }
 }
 
 /* footer styles */
@@ -226,144 +368,6 @@ p {
   color: #8F8E8E;
 }
 
-/* header styles */
-
-.header {
-  margin: 30px 129px 28px 132px;
-}
-
-.header-logo {
-  width: 141px;
-  height: 100%;
-}
-
-.logo {
-  margin: 3px 0 4px;
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-list > li {
-  position: relative;
-  margin: 0 0 0 20px;
-}
-
-.menu-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.menu-link:hover {
-  color: #8F8E8E;
-}
-
-.menu-sub_list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #FFF;
-  padding: 15px;
-  max-width: 200px;
-}
-
-.menu-sub_list li {
-  margin-bottom: 16px;
-}
-
-.menu-sub_list li:last-child {
-  margin-bottom: 0;
-}
-
-.menu-sub_link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-}
-
-.menu-sub_link:hover {
-  color: #8F8E8E;
-}
-
-.hide-menu {
-  display: none;
-}
-
-.lock {
-  overflow: hidden;
-}
-
-/* -------------------- */
-
-body.pc .menu-list > li:hover .menu-sub_list {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-  pointer-events: all;
-}
-
-body.touch .menu-list > li.active .menu-sub_list {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-  pointer-events: all;
-}
-
-body.touch .menu-list > li.active .burger-arrow {
-  transform: rotate(180deg);
-  transition: all 0.3s ease 0s;
-}
-
-body.touch .burger-arrow {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 8px;
-  margin-left: 7px;
-  background-image: url(../assets/icons/dropdown-icon.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* ---------------------- */
-
-@media (min-width: 767px) {
-  .menu-list {
-    display: flex;
-    align-items: center;
-  }
-
-  .menu-sub_list {
-    transform: translate(0px, 10%);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.3s ease 0s;
-  }
-
-  .menu-arrow_icon::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 8px;
-    margin-left: 7px;
-    background-image: url(../assets/icons/dropdown-icon.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .menu-arrow_icon:hover::after {
-    transform: rotate(180deg);
-    transition: all 0.3s ease 0s;
-  }
-}
-
 /* delivery styles */
 
 .main {
@@ -376,7 +380,7 @@ body.touch .burger-arrow {
 }
 
 .delivery {
-  max-width: 624px;
+  width: 624px;
 }
 
 .delivery-title {
@@ -400,8 +404,8 @@ body.touch .burger-arrow {
 }
 
 .delivery-image {
-  width: 551px;
-  height: 297px;
+  width: 573.67px;
+  height: 300px;
 }
 
 /* payment styles */
@@ -589,7 +593,7 @@ body.touch .burger-arrow {
   position: relative;
   max-width: 1170px;
   display: flex;
-  margin: 150px 130px 0;
+  margin: 150px 130px 0 131px;
   top: 45px;
   border-radius: 50px;
   background: linear-gradient(264.66deg, #F2F2F2 21.36%, #E4E4E4 101.02%);;
