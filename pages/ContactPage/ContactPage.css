@@ -7,7 +7,7 @@
 
 .contact-background {
   position: absolute;
-  top: 2px;
+  z-index: 0;
 }
 
 .contact-title {
@@ -118,4 +118,76 @@
   margin: 0 20px 0 23px;
 }
 
+/* media 768px */
 
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .header {
+    margin: 0;
+    padding: 20px 20px 20px;
+  }
+
+  .contact-background {
+    width: 414px;
+
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px;
+  }
+
+  .contact-image {
+    width: 334.97px;
+    height: 301.99px;
+    margin: 0;
+  }
+
+  .contact-data_wrapper {
+    margin-left: 0;
+  }
+
+  .contact-input {
+    width: 336px;
+  }
+
+  .email-phone_wrapper {
+    justify-content: inherit;
+  }
+
+  .email-phone_input {
+    width: 158px;
+    margin-right: 15px;
+  }
+
+  .detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+
+  .detail {
+    margin: 0 0 32px;
+    padding: 0;
+  }
+
+  .detail-contact_wrapper {
+    display: block;
+  }
+
+  .detail-contact_phone {
+    display: flex;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .detail-footer_image {
+    width: 335px;
+    margin-bottom: 100px;
+  }
+}
