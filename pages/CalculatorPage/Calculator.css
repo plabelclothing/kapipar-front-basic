@@ -189,3 +189,101 @@
   margin: 0;
   color: #000;
 }
+
+/* media 768px */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .header {
+    position: relative;
+    padding: 16px 16px 16px 21px;
+    margin: 0;
+  }
+
+  .calculator-background {
+    position: absolute;
+    top: 112px;
+    left: 0;
+    width: 414px;
+  }
+
+  .main {
+    margin: 20px 20px 20px;
+  }
+
+  .calculator-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .calculator-description {
+    margin: 20px 0 40px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .calculator-payment-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .owner-information {
+    margin: 0;
+    padding: 0;
+  }
+
+  .owner-input {
+    width: 161.09px;
+    height: 29.61px;
+    padding: 0;
+  }
+
+  .owner-input_small {
+    width: 161px;
+    height: 27.61px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .calculator-btn {
+    width: 336px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+
+  .package-insure_wrapper {
+    margin: 10px 0 10px;
+  }
+
+  .price-card {
+    width: 336px;
+    height: 212.63px;
+  }
+
+  .price-wrapper {
+    padding: 55px 74px 68px 75px;
+  }
+
+  .price-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .price-cost {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .price-description {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+}
