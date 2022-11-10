@@ -622,6 +622,7 @@ body.touch .burger-arrow {
   .header {
     position: relative;
     margin: 16px 16px 16px 21px;
+    padding: 0;
   }
 
   .logo {
