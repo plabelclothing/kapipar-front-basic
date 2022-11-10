@@ -130,15 +130,26 @@
     padding: 20px 20px 20px;
   }
 
+  .contact-title {
+    margin: 20px 0 99px;
+  }
+
+  .contact-subtitle {
+    position: absolute;
+    text-align: center;
+    top: 178px;
+    left: 4px;
+  }
+
   .contact-background {
     width: 414px;
-
   }
 
   .contact-wrapper {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 20px;
+    align-items: center;
   }
 
   .contact-image {
@@ -148,7 +159,7 @@
   }
 
   .contact-data_wrapper {
-    margin-left: 0;
+    margin: 0 25px 0;
   }
 
   .contact-input {

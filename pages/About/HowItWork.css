@@ -93,6 +93,15 @@
     width: auto;
   }
 
+  .header {
+    padding: 16px 16px 16px 21px;
+    margin: 0;
+  }
+
+  .menu-body {
+    z-index: 5;
+  }
+
   .main-background {
     top: 32px;
     z-index: 0;
@@ -101,6 +110,7 @@
 
   .main {
     margin: 20px 20px 70px;
+    z-index: 2;
   }
 
   .how-works {

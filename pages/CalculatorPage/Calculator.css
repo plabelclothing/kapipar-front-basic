@@ -66,6 +66,9 @@
   width: 190px;
   margin-right: 30px;
   padding: 10px 10px 10px;
+  background: #FFFFFF;
+  border: 1px solid #8F8E8E;
+  border-radius: 5px;
 }
 
 .package-title {
@@ -146,6 +149,8 @@
 
 .size-tabel_type {
   padding: 9px 10px 10px;
+  background: #FFFFFF;
+  border: 0.730435px solid #8F8E8E;
 }
 
 .calculator-btn {
@@ -237,6 +242,22 @@
     padding: 0;
   }
 
+  .block-1_wrapper {
+    justify-content: space-between;
+  }
+
+  .owner-country_wrapper {
+    margin: 0;
+  }
+
+  .block-2_wrapper {
+    justify-content: space-between;
+  }
+
+  .owner-postal_wrapper {
+    margin: 0;
+  }
+
   .owner-input {
     width: 161.09px;
     height: 29.61px;
@@ -248,6 +269,8 @@
     height: 27.61px;
     padding: 0;
     margin: 0;
+    border: 1px solid #8F8E8E;
+    border-radius: 5px;
   }
 
   .calculator-btn {

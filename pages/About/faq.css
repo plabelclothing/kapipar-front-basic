@@ -106,7 +106,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px 185px;
+    padding: 20px 20px 185px;
+    margin: 0;
     z-index: 3;
   }
 
@@ -133,5 +134,9 @@
     width: 163.14px;
     height: 200px;
     top: 100px;
+  }
+
+  .faq-accardion {
+    height: 400px;
   }
 }
