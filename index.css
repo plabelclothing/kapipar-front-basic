@@ -625,11 +625,6 @@ body.touch .burger-arrow {
     padding: 0;
   }
 
-  .logo {
-    height: 24px;
-    margin: 0;
-  }
-
   .menu-icon {
     z-index: 5;
     display: block;
@@ -785,6 +780,7 @@ body.touch .burger-arrow {
   }
 
   .delivery {
+    width: 296px;
     margin: 30px 39px 0 35px;
   }
 

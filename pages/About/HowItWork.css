@@ -103,9 +103,9 @@
   }
 
   .main-background {
-    top: 32px;
+    top: 100px;
     z-index: 0;
-    width: 420px;
+    width: 412px;
   }
 
   .main {
