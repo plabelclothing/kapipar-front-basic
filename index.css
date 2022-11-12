@@ -634,6 +634,10 @@ body.touch .burger-arrow {
     padding: 0;
   }
 
+  .header-logo {
+    margin: 4px 0 4px;
+  }
+
   .menu-icon {
     z-index: 5;
     display: block;
