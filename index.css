@@ -108,6 +108,7 @@ p {
 .header-logo {
   height: 38px;
   margin: 3px 0 4px;
+  image-rendering: auto
 }
 
 .header-wrapper {
@@ -632,11 +633,6 @@ body.touch .burger-arrow {
     position: relative;
     margin: 16px 16px 16px 21px;
     padding: 0;
-  }
-
-  .header-logo {
-    height: 24px;
-    margin: 4px 0 4px;
   }
 
   .menu-icon {
