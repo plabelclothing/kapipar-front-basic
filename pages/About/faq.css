@@ -97,9 +97,10 @@
 
   .faq-background {
     position: absolute;
-    left: 0;
-    top: 140px;
-    width: 412px;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
   }
 
   .main {
@@ -131,12 +132,12 @@
 
   .faq-image {
     position: absolute;
-    width: 163.14px;
+    width: 163px;
     height: 200px;
-    top: 100px;
+    top: 120px;
   }
 
   .faq-accardion {
-    height: 400px;
+    height: 450px;
   }
 }

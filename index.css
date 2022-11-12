@@ -106,8 +106,7 @@ p {
 }
 
 .header-logo {
-  width: 141px;
-  height: 100%;
+  height: 40px;
 }
 
 .header-wrapper {
@@ -140,7 +139,11 @@ p {
   top: 100%;
   left: 0;
   padding: 15px;
-  max-width: 200px;
+  width: 200px;
+}
+
+.menu-sub_small {
+  max-width: 148px;
 }
 
 .menu-sub_list li {
@@ -167,6 +170,11 @@ p {
 
 .lock {
   overflow: hidden;
+}
+
+.lock-touch {
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 /* -------------------- */
