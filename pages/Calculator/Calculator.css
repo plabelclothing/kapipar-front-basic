@@ -71,6 +71,19 @@
   border-radius: 5px;
 }
 
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.panel.show {
+  display: block;
+  opacity: 1;
+  max-height: 200px;
+}
+
 .package-title {
   margin: 20px 0 10px;
   font-size: 18px;
@@ -124,6 +137,7 @@
   border: 0;
   background: transparent;
   cursor: pointer;
+  color: #141414;
 }
 
 .shipping-description {
@@ -150,7 +164,8 @@
 .size-tabel_type {
   padding: 9px 10px 10px;
   background: #FFFFFF;
-  border: 0.730435px solid #8F8E8E;
+  border: 1px solid #8F8E8E;
+  color: #141414;
 }
 
 .calculator-btn {
@@ -170,7 +185,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 111px 150px 136px;
+  padding: 111px 150px 144px;
 }
 
 .price-title {
@@ -262,6 +277,7 @@
     width: 161.09px;
     height: 29.61px;
     padding: 0;
+    color: #8F8E8E;
   }
 
   .owner-input_small {
@@ -271,6 +287,7 @@
     margin: 0;
     border: 1px solid #8F8E8E;
     border-radius: 5px;
+    color: #8F8E8E;
   }
 
   .calculator-btn {

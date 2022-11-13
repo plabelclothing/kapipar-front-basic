@@ -106,9 +106,11 @@ p {
 }
 
 .header-logo {
-  height: 38px;
-  margin: 3px 0 4px;
-  image-rendering: auto
+  display: block;
+  width: 141px;
+  height: 40px;
+  background: url(../assets/icons/kapipar-logo.svg);
+  background-size: 141px 40px;
 }
 
 .header-wrapper {

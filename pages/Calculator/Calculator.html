@@ -65,9 +65,7 @@
           </div>
         </div>
       </header>
-      <div>
-        <img class="calculator-background" src="../../assets/icons/lines.svg" alt="lines" />
-      </div>
+      <img class="calculator-background" src="../../assets/icons/lines.svg" alt="lines" />
       <section class="main">
         <div class="calculator-title_wrapper">
           <h1 class="calculator-title">Calculate your price</h1>
@@ -106,26 +104,31 @@
               </div>
               <h4 class="package-title">Package Value</h4>
               <input class="package-input" type="text" value1="100"/>
-              <div class="package-insure_wrapper">
-                <input type="checkbox" id="scales" name="scales" checked />
-                <p class="package-insure_description">do you want to insure the package?</p>
-              </div>
-              <div class="shipping-size_wrapper">
-                <div class="shipping-wrapper">
-                  <button class="shipping-btn">+</button>
-                  <p class="shipping-description">
-                    I want to enter shipping sizes
-                  </p>
+              <div class="package-insure_accardion">
+                <div class="package-insure_wrapper">
+                  <input type="checkbox" id="scales" name="scales" />
+                  <p class="package-insure_description">do you want to insure the package?</p>
                 </div>
-                <div class="size-tabel_wrapper">
-                  <p class="size-tabel_title">L</p>
-                  <input class="size-tabel_input" type="text" value="10">
-                  <p class="size-tabel_title">W</p>
-                  <input class="size-tabel_input" type="text" value="10">
-                  <input class="size-tabel_input" type="text" value="10">
-                  <select class="size-tabel_type">
-                    <option value="">CM</option>
-                  </select>
+                <div class="panel">
+                  <div class="shipping-size_wrapper">
+                    <div class="shipping-wrapper">
+                      <button class="shipping-btn">+</button>
+                      <p class="shipping-description">
+                        I want to enter shipping sizes
+                      </p>
+                    </div>
+                    <div class="size-tabel_wrapper">
+                      <p class="size-tabel_title">L</p>
+                      <input class="size-tabel_input" type="text" value="10">
+                      <p class="size-tabel_title">W</p>
+                      <input class="size-tabel_input" type="text" value="10">
+                      <p class="size-tabel_title">H</p>
+                      <input class="size-tabel_input" type="text" value="10">
+                      <select class="size-tabel_type">
+                        <option value="">CM</option>
+                      </select>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button class="get-btn calculator-btn">Check Your Price</button>
@@ -184,5 +187,6 @@
       </footer>
     </div>
     <script src="../../script.js"></script>
+    <script src="../Calculator/panel.js"></script>
   </body>
 </html>
