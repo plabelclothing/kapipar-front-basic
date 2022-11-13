@@ -63,9 +63,6 @@
 }
 
 .owner-input_small {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 10px;
   width: 190px;
   background: #FFFFFF;
@@ -164,7 +161,8 @@
 }
 
 .size-tabel_type {
-  padding: 9px 10px 10px;
+  box-sizing: border-box;
+  padding: 10px;
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
   border-radius: 5px;
@@ -285,9 +283,6 @@
 
   .owner-input_small {
     box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 7px;
     width: 161px;
     height: 27.61px;
