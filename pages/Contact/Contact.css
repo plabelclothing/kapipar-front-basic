@@ -66,6 +66,7 @@
 
 .email-phone_wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .email-phone_input {

@@ -107,9 +107,9 @@ p {
 
 .header-logo {
   display: block;
-  width: 141px;
+  width: 142px;
   height: 40px;
-  background: url(../assets/icons/kapipar-logo.svg);
+  background-image: url(../assets/images/kapipar-logo-v2.png);
 }
 
 .header-wrapper {
@@ -634,6 +634,13 @@ body.touch .burger-arrow {
     position: relative;
     margin: 16px 16px 16px 21px;
     padding: 0;
+  }
+
+  .header-logo {
+    display: block;
+    width: 82px;
+    height: 24px;
+    background-image: url(../assets/images/kapipar-logo-mobile.png);
   }
 
   .menu-icon {
