@@ -162,6 +162,7 @@
 
 .size-tabel_type {
   box-sizing: border-box;
+  width: 71px;
   padding: 10px;
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
