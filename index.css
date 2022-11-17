@@ -106,10 +106,9 @@ p {
 }
 
 .header-logo {
-  display: block;
   width: 142px;
   height: 40px;
-  background-image: url(../assets/images/kapipar-logo-v2.png);
+  background-image: url(../assets/icons/Kapipar-Logo.svg);
 }
 
 .header-wrapper {
@@ -634,13 +633,6 @@ body.touch .burger-arrow {
     position: relative;
     margin: 16px 16px 16px 21px;
     padding: 0;
-  }
-
-  .header-logo {
-    display: block;
-    width: 82px;
-    height: 24px;
-    background-image: url(../assets/images/kapipar-logo-mobile.png);
   }
 
   .menu-icon {
