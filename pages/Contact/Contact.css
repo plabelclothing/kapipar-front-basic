@@ -153,7 +153,11 @@
     position: absolute;
     text-align: center;
     top: 178px;
-    left: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.6px;
+    margin: 0 20px 0;
+    left: 0px;
   }
 
   .contact-background {
@@ -178,16 +182,20 @@
   }
 
   .contact-data_wrapper {
-    margin: 0 25px 0;
+    margin: 0 auto;
   }
 
   .contact-input {
-    width: 366px;
+    width: 329px;
+  }
+
+  .captcha-wrapper {
+    width: 335px;
+    justify-content: center;
   }
 
   .g-recaptcha {
-    width: 243px;
-    margin: 0 auto;
+    width: 210px;
     transform: scale(0.6);
     transform-origin: 0;
   }
@@ -197,7 +205,7 @@
   }
 
   .email-phone_input {
-    width: 174px;
+    width: 158px;
   }
 
   .detail-wrapper {
@@ -208,7 +216,7 @@
   }
 
   .detail {
-    margin: 0 0 32px;
+    margin: 0 20px 32px;
     padding: 0;
   }
 
