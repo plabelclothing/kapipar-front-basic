@@ -65,7 +65,7 @@
 
 .login-input {
   width: 357px;
-  padding: 11px 24px 10px;
+  padding: 12px 22px 10px;
   margin-bottom: 11px;
   border-radius: 5px;
   border: none;
@@ -152,7 +152,7 @@
   }
 
   .login-window {
-    padding: 14px 4px 20px;
+    padding: 14px 14px 20px;
   }
 
   .login-input {
@@ -160,7 +160,7 @@
   }
 
   .login-btn {
-    width: 350px;
+    width: 344px;
   }
 
   .login-footer_description {
