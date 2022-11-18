@@ -94,6 +94,8 @@
   background: #FFFFFF;
   border: 1px solid #8F8E8E;
   border-radius: 5px;
+  background: url(../../assets/icons/euro-icon.svg) no-repeat;
+  background-position: 96% 50%;
 }
 
 .block-1_wrapper {
