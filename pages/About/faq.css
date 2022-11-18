@@ -78,10 +78,18 @@
 }
 
 .panel {
-  overflow: hidden;
   max-height: 0;
-  transition: all 0.3s ease-in;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
+
+.panel.show {
+  display: block;
+  opacity: 1;
+  max-height: 200px;
+}
+
 
 .panel p {
   margin: 0 0 14px;
