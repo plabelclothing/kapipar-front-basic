@@ -237,12 +237,15 @@
 
   .main {
     margin: 20px 20px 20px;
+    position: relative;
+    z-index: 4;
   }
 
   .calculator-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    text-align: center;
   }
 
   .calculator-description {
@@ -250,6 +253,7 @@
     font-weight: 500;
     font-size: 9px;
     line-height: 12.6px;
+    text-align: center;
   }
 
   .calculator-payment-wrapper {
