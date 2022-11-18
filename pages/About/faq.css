@@ -81,10 +81,9 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
-  opacity: 0;
 }
 
-.panel.show {
+.panel.active {
   display: block;
   opacity: 1;
   max-height: 200px;
