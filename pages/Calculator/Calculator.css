@@ -263,6 +263,7 @@
   }
 
   .block-1_wrapper {
+    margin: 0 20px 20px;
     justify-content: space-between;
   }
 
@@ -271,6 +272,7 @@
   }
 
   .block-2_wrapper {
+    margin: 0 20px 0;
     justify-content: space-between;
   }
 
@@ -279,20 +281,30 @@
   }
 
   .owner-input {
-    width: 161.09px;
-    height: 29.61px;
-    padding: 0;
+    width: 146px;
+    padding: 7px;
     color: #8F8E8E;
   }
 
   .owner-input_small {
-    box-sizing: border-box;
     padding: 7px;
-    width: 161px;
-    height: 27.61px;
+    width: 130px;
     background: #FFFFFF;
     border: 1px solid #8F8E8E;
-    border-radius: 3.65217px;
+    border-radius: 3.6px;
+  }
+
+  .owner-input_mobile {
+    margin-left: 10px;
+  }
+
+  .package-title {
+    margin: 20px 20px 10px;
+  }
+
+  .package-input {
+    width: 310px;
+    margin: 0 auto;
   }
 
   .calculator-btn {
@@ -302,7 +314,11 @@
   }
 
   .package-insure_wrapper {
-    margin: 10px 0 10px;
+    margin: 10px 20px 10px;
+  }
+
+  .package-insure_description {
+    font-size: 16px;
   }
 
   .price-card {
