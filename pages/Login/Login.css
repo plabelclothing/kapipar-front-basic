@@ -130,12 +130,12 @@
 
 @media screen and (max-width: 767px) {
   .wrapper {
-    width: auto;
+    width: 375px;
   }
 
   .logo-image {
     display: flex;
-    margin: 20px 14px 0px;
+    margin: 20px 14px 20px;
     justify-content: center;
   }
 
@@ -143,8 +143,16 @@
     display: none;
   }
 
+  .login-wrapper {
+    justify-content: center;
+  }
+
   .login {
-    padding: 20px 20px 20px;
+    padding: 0;
+  }
+
+  .login-window {
+    padding: 14px 4px 20px;
   }
 
   .login-input {
