@@ -263,7 +263,6 @@
   }
 
   .block-1_wrapper {
-    margin: 0 20px 20px;
     justify-content: space-between;
   }
 
@@ -272,7 +271,6 @@
   }
 
   .block-2_wrapper {
-    margin: 0 20px 0;
     justify-content: space-between;
   }
 
@@ -298,23 +296,14 @@
     margin-left: 10px;
   }
 
-  .package-title {
-    margin: 20px 20px 10px;
-  }
-
-  .package-input {
-    width: 310px;
-    margin: 0 auto;
+  .shipping-wrapper {
+    margin-left: 6px;
   }
 
   .calculator-btn {
     width: 336px;
     margin: 0 auto;
     margin-top: 14px;
-  }
-
-  .package-insure_wrapper {
-    margin: 10px 20px 10px;
   }
 
   .package-insure_description {
@@ -346,5 +335,13 @@
     font-weight: 500;
     font-size: 9px;
     line-height: 12.6px;
+  }
+
+  .shipping-size_wrapper {
+    padding: 10px 0 10px;
+  }
+
+  .size-tabel_input {
+    margin: 0 6px;
   }
 }
