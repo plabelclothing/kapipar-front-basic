@@ -13,7 +13,12 @@
     <div class="wrapper">
       <header class="header">
         <div class="header-wrapper">
-          <a href=""><img class="header-logo" src="../../assets/icons/kapipar-logo.svg" alt="Kapipar-logo"></a>
+          <a href=""
+            ><img
+              class="header-logo"
+              src="../../assets/icons/kapipar-logo.svg"
+              alt="Kapipar-logo"
+          /></a>
           <div class="header-menu">
             <div class="menu-icon">
               <span></span>
@@ -26,19 +31,53 @@
                     <span class="menu-link menu-arrow_icon">About</span>
                     <span class="burger-arrow"></span>
                     <ul class="menu-sub_list">
-                      <li><a href="../pages/About/HowItWork.html" class="menu-sub_link">How It Works</a></li>
-                      <li><a href="../pages/About/Faq.html" class="menu-sub_link">FAQs</a></li>
-                      <li><a href="../pages/About/OurBussines.html" class="menu-sub_link">Our Bussines</a></li>
-                      <li><a href="../pages/About/careers.html" class="menu-sub_link">Careers</a></li>
+                      <li>
+                        <a
+                          href="../pages/About/HowItWork.html"
+                          class="menu-sub_link"
+                          >How It Works</a
+                        >
+                      </li>
+                      <li>
+                        <a href="../pages/About/Faq.html" class="menu-sub_link"
+                          >FAQs</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../pages/About/OurBussines.html"
+                          class="menu-sub_link"
+                          >Our Bussines</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../pages/About/careers.html"
+                          class="menu-sub_link"
+                          >Careers</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
                     <span class="menu-link menu-arrow_icon">Services</span>
                     <span class="burger-arrow"></span>
                     <ul class="menu-sub_list">
-                      <li><a href="#package-consolidation" class="menu-sub_link">Package Consolidation</a></li>
-                      <li><a href="#slimming-parcels" class="menu-sub_link">Slimming Parcels</a></li>
-                      <li><a href="#taking-pictures" class="menu-sub_link">Taking Picture</a></li>
+                      <li>
+                        <a href="#package-consolidation" class="menu-sub_link"
+                          >Package Consolidation</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#slimming-parcels" class="menu-sub_link"
+                          >Slimming Parcels</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#taking-pictures" class="menu-sub_link"
+                          >Taking Picture</a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li><a href="" class="menu-link">Calculator</a></li>
@@ -65,7 +104,11 @@
           </div>
         </div>
       </header>
-      <img class="calculator-background" src="../../assets/icons/lines.svg" alt="lines" />
+      <img
+        class="calculator-background"
+        src="../../assets/icons/lines.svg"
+        alt="lines"
+      />
       <section class="main">
         <div class="calculator-title_wrapper">
           <h1 class="calculator-title">Calculate your price</h1>
@@ -91,35 +134,37 @@
               <div class="block-2_wrapper">
                 <div class="owner-postal_wrapper">
                   <h4 class="owner-title">Postal Code</h4>
-                  <input class="owner-input_small" type="text" placeholder="11122">
+                  <input class="owner-input_small" type="text" placeholder="11122"/>
                 </div>
                 <div class="owner-package_wrapper">
                   <h4 class="owner-title">Package Weight</h4>
-                  <input class="owner-input_small" type="text" placeholder="100">
+                  <input class="owner-input_small" type="text" placeholder="100"/>
                 </div>
               </div>
               <h4 class="package-title">Package Value</h4>
-              <input class="package-input" type="text" value1="100"/>
+              <input class="package-input" type="text" value1="100" />
+              <div class="package-insure_wrapper">
+                <input type="checkbox" id="scales" name="scales" />
+                <p class="package-insure_description">
+                  do you want to insure the package?
+                </p>
+              </div>
               <div class="package-insure_accardion">
-                <div class="package-insure_wrapper">
-                  <input type="checkbox" id="scales" name="scales" />
-                  <p class="package-insure_description">do you want to insure the package?</p>
-                </div>
-                <div class="panel">
-                  <div class="shipping-size_wrapper">
-                    <div class="shipping-wrapper">
-                      <button class="shipping-btn">+</button>
-                      <p class="shipping-description">
-                        I want to enter shipping sizes
-                      </p>
-                    </div>
+                <div class="shipping-size_wrapper">
+                  <button class="shipping-wrapper shipping-btn">
+                    +
+                    <p class="shipping-description">
+                      I want to enter shipping sizes
+                    </p>
+                  </button>
+                  <div class="panel">
                     <div class="size-tabel_wrapper">
                       <p class="size-tabel_title">L</p>
-                      <input class="size-tabel_input" type="text" value="10">
+                      <input class="size-tabel_input" type="text" value="10" />
                       <p class="size-tabel_title">W</p>
-                      <input class="size-tabel_input" type="text" value="10">
+                      <input class="size-tabel_input" type="text" value="10" />
                       <p class="size-tabel_title">H</p>
-                      <input class="size-tabel_input" type="text" value="10">
+                      <input class="size-tabel_input" type="text" value="10" />
                       <select class="size-tabel_type">
                         <option value="">CM</option>
                       </select>
@@ -133,7 +178,9 @@
               <div class="price-wrapper">
                 <h3 class="price-title">Your Price Is :</h3>
                 <p class="price-cost">12.89 €</p>
-                <p class="price-description">usually it takes about 14 days for delivery</p>
+                <p class="price-description">
+                  usually it takes about 14 days for delivery
+                </p>
               </div>
             </div>
           </div>
@@ -143,7 +190,7 @@
         <div class="link-wrapper">
           <div class="also-on">
             <h4 class="also-title">WE ARE ALSO ON</h4>
-            <hr class="also-underline">
+            <hr class="also-underline" />
             <div class="social-media">
               <a class="social-icon" href="instagram.com">
                 <div class="icon-instagram"></div>
@@ -159,20 +206,26 @@
           <div class="pages">
             <h4 class="pages-title">Pages</h4>
             <a href="../../index.html" class="also-links">Home</a>
-            <a href="../Calculator/Calculator.html" class="also-links">Calculator</a>
+            <a href="../Calculator/Calculator.html" class="also-links"
+              >Calculator</a
+            >
             <a href="../Contact/Contact.html" class="also-links">Contact</a>
             <a href="#" class="also-links">Your Order</a>
             <a href="#" class="also-links">Track Your Package</a>
           </div>
           <div class="about-us">
             <h4 class="about-us_title">About Us</h4>
-            <a href="../About/HowItWork.html" class="also-links">How It Works</a>
+            <a href="../About/HowItWork.html" class="also-links"
+              >How It Works</a
+            >
             <a href="../About/faq.html" class="also-links">FAQ</a>
-            <a href="../About/OurBussines.html" class="also-links">Our Bussines</a>
+            <a href="../About/OurBussines.html" class="also-links"
+              >Our Bussines</a
+            >
             <a href="../About/careers.html" class="also-links">Career</a>
           </div>
         </div>
-        <hr class="underline">
+        <hr class="underline" />
         <div class="сonfidentiality">
           <p class="copyright">Copyright © 2022</p>
           <div class="privacy-policy_wrapper">
