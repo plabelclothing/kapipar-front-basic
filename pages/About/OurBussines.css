@@ -1,5 +1,4 @@
 @import url(../../index.css);
-@import url(../About/AboutFaq.css);
 
 .title-wrapper {
   display: flex;
@@ -8,9 +7,9 @@
   margin: 122px 273px 100px;
 }
 
-.AboutOurBussines-background {
+.bussines-background {
   position: absolute;
-  top: 4px;
+  top: 100px;
 }
 
 .title {
@@ -19,6 +18,11 @@
 
 .description {
   margin: 0;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
 }
 
 /* main-ourbussines styles */
@@ -81,4 +85,78 @@
   color: #fff;
   font-size: 70px;
   line-height: 84.72px;
+}
+
+/* media */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .bussines-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
+  }
+
+  .title-wrapper {
+    position: relative;
+    margin: 40px 20px 20px;
+    z-index: 8;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 22.2px;
+  }
+
+  .main-ourbussines {
+    position: relative;
+    margin: 20px 20px 20px;
+    z-index: 7;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22.2px;
+  }
+
+  .ourbussines-image_wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .word-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .word-image {
+    width: 80px;
+  }
+
+  .cube-wrapper {
+    flex-direction: column;
+    margin: 49px 0 80px;
+  }
+
+  .cube {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .cube-title {
+    text-align: center;
+  }
+
+  .cube-description {
+    text-align: center;
+  }
 }

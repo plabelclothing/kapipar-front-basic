@@ -1,8 +1,12 @@
 @import url(../../index.css);
-@import url(../About/AboutFaq.css);
 
 .wrapper {
   width: 1429px;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
 }
 
 /* careers styles */
@@ -92,4 +96,40 @@
 .careers-cards_underline {
   margin: 0;
   margin: 10px 0 0;
+}
+
+/* media */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .careers-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
+  }
+
+  .main {
+    position: relative;
+    margin: 40px 20px 20px;
+    z-index: 5;
+  }
+
+  .careers-description {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .careers-cards_wrapper {
+    flex-direction: column;
+  }
+
+  .careers-cards {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }
