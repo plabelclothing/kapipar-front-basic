@@ -17,7 +17,9 @@
 }
 
 .logo {
-  height: 48px;
+  display: inline-block;
+  width: 142px;
+  height: 42px;
 }
 
 .greeting {
@@ -137,6 +139,11 @@
     display: flex;
     margin: 20px 14px 20px;
     justify-content: center;
+  }
+
+  .logo {
+    width: 81px;
+    height: 24px;
   }
 
   .greeting {

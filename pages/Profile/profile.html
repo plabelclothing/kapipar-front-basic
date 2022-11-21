@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=w, initial-scale=1.0" />
   <link rel="stylesheet" href="../../normalize.css" />
   <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../About/faq.css" />
+  <link rel="stylesheet" href="../Profile/profile.css" />
   <title>Kapipar</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
                 <li><a href="" class="menu-link">Contact</a></li>
                 <button class="get-btn menu-btn">Login</button>
                 <div class="hide-menu">
-                  <a href="" class="hide-menu_link">Profile</a>
+                  <a href="../Profile/profile.html" class="hide-menu_link">Profile</a>
                   <a href="" class="hide-menu_link">My Order</a>
                   <a href="" class="hide-menu_link">Track Your Package</a>
                   <a href="" class="hide-menu_link">Log Out</a>
@@ -67,96 +67,95 @@
         </div>
       </div>
     </header>
-    <img class="faq-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="main">
-      <div class="faq-wrapper">
-        <h1 class="faq-title">FAQs</h1>
-        <p class="faq-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Nam sit amet felis vel ante vestibulum sollicitudin.
-          Praesent efficitur condimentum lacus, sagittis vehicula
-          tortor dictum vel.
-        </p>
-        <div class="faq-accardion">
-          <div class="faq-accordion-wrapper">
-            <div class="faq-accordion">
-              <h5>Lorem Ipsum is Simple Dummy Text</h5>
-              <div class="icon"></div>
+    <div class="main">
+      <aside class="left-side_profile">
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/profile-icon.svg" alt="profile-icon">
+          Profile
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/order-icon.svg" alt="order-icon">
+          My Orders
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          Track Your Package
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          My address
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/logout-icon.svg" alt="logout-icon">
+          Log Out
+        </a>
+      </aside>
+      <div class="right-side_profile">
+        <h2 class="profile-title">Profile</h2>
+        <div class="profile-information">
+          <div class="profile-photo">
+            <div class="photo-circle">
+              <img class="user-photo" src="../../assets/icons/profile-icon.svg" alt="">
             </div>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam sit amet felis vel ante vestibulum sollicitudin.
-                Praesent efficitur condimentum lacus, sagittis vehicula
-                tortor dictum vel.
-              </p>
-            </div>
+            <p class="profile-name">Sean Aditia</p>
           </div>
-          <div class="faq-accordion-wrapper">
-            <div class="faq-accordion">
-              <h5>Lorem Ipsum is Simple Dummy Text</h5>
-              <div class="icon"></div>
-            </div>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam sit amet felis vel ante vestibulum sollicitudin.
-                Praesent efficitur condimentum lacus, sagittis vehicula
-                tortor dictum vel.
-              </p>
-            </div>
-          </div>
-          <div class="faq-accordion-wrapper">
-            <div class="faq-accordion">
-              <h5>Lorem Ipsum is Simple Dummy Text</h5>
-              <div class="icon"></div>
-            </div>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam sit amet felis vel ante vestibulum sollicitudin.
-                Praesent efficitur condimentum lacus, sagittis vehicula
-                tortor dictum vel.
-              </p>
-            </div>
-          </div>
-          <div class="faq-accordion-wrapper">
-            <div class="faq-accordion">
-              <h5>Lorem Ipsum is Simple Dummy Text</h5>
-              <div class="icon"></div>
-            </div>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nam sit amet felis vel ante vestibulum sollicitudin.
-                Praesent efficitur condimentum lacus, sagittis vehicula
-                tortor dictum vel.
-              </p>
-            </div>
+          <div class="profile-email">
+            <img class="mail-icon" src="../../assets/icons/mail-icon.svg" alt="email-icon">
+            <p class="email-title"><span class="highlight">Email</span>: ilkerturker@gmail.com</p>
           </div>
         </div>
+        <div class="profile-address_wrapper">
+          <div class="profile-address">
+            <div class="address-wrapper">
+              <img class="profile-right_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+              <p class="profile-wrapper_title">Address</p>
+            </div>
+            <div class="edit-btn">Edit</div>
+          </div>
+          <div class="panel">
+            <div class="panel-wrapper">
+              <input class="panel-input" type="text">
+            </div>
+          </div>
+          <p class="full-address">1545 S. Wendigo Avenue, #209, Witchita KS 99099</p>
+        </div>
+        <div class="profile-password_wrapper">
+          <div class="profile-password">
+            <div class="password-wrapper">
+              <img class="profile-right_icon" src="../../assets/icons/lock-icon.svg" alt="lock-icon">
+              <p class="profile-wrapper_title">Password</p>
+            </div>
+            <div class="edit-btn change-btn">Change</div>
+          </div>
+          <div class="panel-password">
+            <div class="panel-wrapper">
+              <input class="panel-input" type="text">
+            </div>
+          </div>
+          <input class="password-input" type="password" placeholder="*************" readonly="readonly">
+        </div>
       </div>
-      <img class="faq-image" src="../../assets/images/question-img.svg" alt="question-img">
-    </section>
+    </div>
     <footer class="footer">
       <div class="link-wrapper">
         <div class="also-on">
           <h4 class="also-title">WE ARE ALSO ON</h4>
           <hr class="also-underline">
           <div class="social-media">
-            <a class="social-icon" href="#">
+            <a class="social-icon" href="instagram.com">
               <div class="icon-instagram"></div>
             </a>
-            <a class="social-icon" href="#">
+            <a class="social-icon" href="facebook.com">
               <div class="icon-facebook"></div>
             </a>
-            <a class="social-icon" href="#">
+            <a class="social-icon" href="tiktok.com">
               <div class="icon-tiktok"></div>
             </a>
           </div>
         </div>
         <div class="pages">
           <h4 class="pages-title">Pages</h4>
-          <a href="../../index.html" class="also-links">Home</a>
+          <a href="../index.html" class="also-links">Home</a>
           <a href="../Calculator/Calculator.html" class="also-links">Calculator</a>
           <a href="../Contact/Contact.html" class="also-links">Contact</a>
           <a href="#" class="also-links">Your Order</a>
@@ -180,7 +179,7 @@
       </div>
     </footer>
   </div>
-  <script src="../About/faq.js"></script>
+  <script src="../Profile/profile.js"></script>
   <script src="../../script.js"></script>
 </body>
 </html>
