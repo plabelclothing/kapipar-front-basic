@@ -172,6 +172,10 @@
   display: none;
 }
 
+.panel-show {
+  display: block;
+}
+
 .panel-password {
   display: none;
 }
@@ -184,6 +188,7 @@
 
 .panel-input {
   margin-left: 60px;
+  height: 18px;
 }
 
 .submit-btn {
@@ -202,6 +207,10 @@
   color: #474747;
 }
 
+.address-hidden {
+  display: none;
+}
+
 .profile-password_wrapper {
   margin-top: 20px;
   padding: 25px 0 25px 25px;
@@ -217,6 +226,18 @@
 
 .password-wrapper {
   display: flex;
+}
+
+.panel-password {
+  display: none;
+}
+
+.panel-password_show {
+  display: block;
+}
+
+.password-input_hidden {
+  display: none;
 }
 
 .password-input {
@@ -360,13 +381,18 @@
   }
 
   .password-input {
+    height: 10px;
     margin-top: 6px;
     margin-left: 22px;
   }
 
+  .panel-wrapper {
+    margin-top: 6px;
+  }
+
   .panel-input {
     width: 150px;
-    height: 10px;
+    height: 6px;
     margin-left: 20px;
   }
 
