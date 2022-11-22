@@ -10,12 +10,6 @@
   cursor: pointer;
 }
 
-.edit-btn:hover {
-  color: #DADADA;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-}
-
 .profile-wrapper_title {
   margin: 0;
   margin-left: 10px;
@@ -24,6 +18,22 @@
   line-height: 22.4px;
   color: #474747;
 }
+
+@media screen and (min-width: 1200px) {
+  .profile-link:hover {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #141414;
+    background: #DADADA;
+    border-radius: 10px;
+  }
+
+  .edit-btn:hover {
+    color: #DADADA;
+  }
+
+};
 
 /* main styles */
 
@@ -53,17 +63,6 @@
 
 .profile-link:last-child {
   margin-bottom: 0;
-}
-
-.profile-link:hover {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  color: #141414;
-  background: #DADADA;
-  border-radius: 10px;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
 }
 
 .profile-link_icon {
