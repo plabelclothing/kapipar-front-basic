@@ -12,6 +12,8 @@
 
 .edit-btn:hover {
   color: #DADADA;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .profile-wrapper_title {
@@ -31,7 +33,7 @@
 }
 
 .left-side_profile {
-  width: 192px;
+  width: 249px;
   height: 252px;
   padding: 20px 20px 20px;
   border: 1px solid #DADADA;
@@ -60,15 +62,8 @@
   color: #141414;
   background: #DADADA;
   border-radius: 10px;
-}
-
-.profile-link:active {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  color: #141414;
-  background: #DADADA;
-  border-radius: 10px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .profile-link_icon {
@@ -93,7 +88,7 @@
 .profile-photo {
   display: flex;
   align-items: center;
-  margin: 25px 0 16px 25px;
+  margin: 31px 0 16px 25px;
 }
 
 .photo-circle {
@@ -149,6 +144,7 @@
 }
 
 .profile-address_wrapper {
+  height: 108px;
   margin-top: 20px;
   padding: 25px 0 25px 25px;
   border: 1px solid #DADADA;
@@ -181,21 +177,33 @@
   display: none;
 }
 
-.panel-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+.panel-title {
+  margin: 10px 0 0 60px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 14px;
+  color: #141414;
+}
+
+.red-dot {
+  color: #FF0000;
 }
 
 .panel-input {
+  margin-top: 6px;
   margin-left: 60px;
   height: 18px;
+  padding: 2px 20px;
+  border: 1px solid #DADADA;
+  border-radius: 50px;
 }
 
 .submit-btn {
-  margin-left: 10px;
-  border-radius: 0px;
-  height: 25px;
+  margin-top: 6px;
+  margin-left: 60px;
+  border-radius: 50px;
+  height: 24px;
 }
 
 .full-address {
@@ -213,6 +221,7 @@
 }
 
 .profile-password_wrapper {
+  height: 108px;
   margin-top: 20px;
   padding: 25px 0 25px 25px;
   border: 1px solid #DADADA;
@@ -227,6 +236,7 @@
 
 .password-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .panel-password {
@@ -237,19 +247,18 @@
   display: block;
 }
 
-.password-input_hidden {
+.password-title_hidden {
   display: none;
 }
 
-.password-input {
+.password-title {
+  margin: 0;
   margin-top: 10px;
   margin-left: 60px;
-  height: 22px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #474747;
-  border: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -284,6 +293,10 @@
   .right-side_profile {
     margin-left: 0;
     margin-top: 20px;
+  }
+
+  .profile-information {
+    height: 140px;
   }
 
   .profile-title {
@@ -334,9 +347,8 @@
   }
 
   .profile-address_wrapper {
-    height: 34px;
     margin-top: 10px;
-    padding: 10px 0 10px 10px;
+    padding: 14px 0 18px 10px;
   }
 
   .profile-right_icon {
@@ -365,14 +377,19 @@
     line-height: 12.6px;
   }
 
-  .profile-password_wrapper {
-    height: 34px;
-    margin-top: 10px;
-    padding: 10px 0 10px 10px;
+  .panel-title {
+    margin: 6px 0 0 20px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
   }
 
-  .password-input {
-    height: 10px;
+  .profile-password_wrapper {
+    margin-top: 10px;
+    padding: 14px 0 18px 10px;
+  }
+
+  .password-title {
     margin-top: 6px;
     margin-left: 22px;
   }
@@ -382,12 +399,12 @@
   }
 
   .panel-input {
-    width: 150px;
-    height: 6px;
+    width: 240px;
     margin-left: 20px;
+    margin-bottom: 6px;
   }
 
   .submit-btn {
-    height: 10px;
+    margin: 0 auto;
   }
 }

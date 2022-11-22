@@ -4,7 +4,7 @@ const fullAddress = document.querySelector('.full-address');
 
 const password = document.querySelector('.change-btn');
 const hideItem = document.querySelector('.panel-password');
-const passwordInput = document.querySelector('.password-input');
+const passwordTitle = document.querySelector('.password-title');
 
 accord.addEventListener('click', function() {
   panel.classList.toggle('panel-show');
@@ -13,5 +13,5 @@ accord.addEventListener('click', function() {
 
 password.addEventListener('click', function() {
   hideItem.classList.toggle('panel-password_show');
-  passwordInput.classList.toggle('password-input_hidden');
+  passwordTitle.classList.toggle('password-title_hidden');
 });
