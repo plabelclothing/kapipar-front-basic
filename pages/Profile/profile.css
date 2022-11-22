@@ -148,6 +148,7 @@
 }
 
 .profile-address_wrapper {
+  height: 34px;
   margin-top: 20px;
   padding: 25px 0 25px 25px;
   border: 1px solid #DADADA;
@@ -212,6 +213,7 @@
 }
 
 .profile-password_wrapper {
+  height: 34px;
   margin-top: 20px;
   padding: 25px 0 25px 25px;
   border: 1px solid #DADADA;
