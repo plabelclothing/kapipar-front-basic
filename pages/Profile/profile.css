@@ -148,7 +148,6 @@
 }
 
 .profile-password_wrapper {
-  height: 108px;
   margin-top: 20px;
   padding: 25px 0 25px 25px;
   border: 1px solid #DADADA;
@@ -263,7 +262,7 @@
   }
 
   .profile-information {
-    height: 140px;
+    padding: 14px 0 18px 10px;
   }
 
   .profile-title {
@@ -273,7 +272,7 @@
   }
 
   .profile-photo {
-    margin: 10px 0 4px 10px;
+    margin: 0;
   }
 
   .photo-circle {
@@ -300,6 +299,15 @@
     font-weight: 700;
     font-size: 9px;
     line-height: 12.6px;
+  }
+
+  .profile-right_icon {
+    margin-left: 0;
+  }
+
+  .profile-right_icon {
+    width: 10px;
+    height: 10px;
   }
 
   .email-title {
@@ -350,5 +358,20 @@
   .location-btn {
     width: 180px;
     margin: 0 auto;
+  }
+
+  .user-address_wrapper {
+    padding: 14px 0 18px 10px;
+  }
+
+  .user-input_title {
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .location-input {
+    font-size: 9px;
+    line-height: 12.6px;
+    margin-bottom: 10px;
   }
 }
