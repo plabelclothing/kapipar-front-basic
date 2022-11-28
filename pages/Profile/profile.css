@@ -212,8 +212,8 @@
 .user-location_wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   margin-top: 20px;
+  margin-left: 60px;
 }
 
 .location-input {
@@ -234,7 +234,7 @@
 
 .location-btn {
   width: 200px;
-  margin-left: 70px;
+  margin-left: 60px;
 }
 
 .user-input_title {
@@ -431,11 +431,11 @@
   }
 
   .location-input {
-    width: 240px;
+    width: 220px;
   }
 
   .location-select {
-    width: 282px;
+    width: 262px;
   }
 
   .location-btn {
@@ -450,6 +450,11 @@
   .user-input_title {
     font-size: 9px;
     line-height: 12.6px;
+  }
+
+  .user-location_wrapper {
+    margin-top: 6px;
+    margin-left: 22px;
   }
 
   .location-input {
