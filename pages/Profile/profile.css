@@ -10,16 +10,18 @@
   cursor: pointer;
 }
 
-.edit-btn:hover {
-  color: #DADADA;
-}
+@media (hover: hover) {
+  .edit-btn:hover {
+    color: #DADADA;
+  }
 
-.profile-link:hover {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  border-radius: 10px;
-  background: #F4F4F4;
+  .profile-link:hover {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 10px;
+    background: #F4F4F4;
+  }
 }
 
 .profile-wrapper_title {
