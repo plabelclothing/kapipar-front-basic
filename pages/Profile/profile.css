@@ -317,6 +317,11 @@
     padding: 4px 30px 4px 0px;;
   }
 
+  .profile-link:hover {
+    font-size: 10px;
+    line-height: 18px;
+  }
+
   .right-side_profile {
     margin-left: 0;
     margin-top: 20px;
