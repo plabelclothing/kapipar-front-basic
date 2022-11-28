@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-  overflow-x: hidden;
-}
-
 /* reused styles */
 
 .wrapper {
@@ -106,8 +102,8 @@ p {
 }
 
 .header-logo {
-  width: 100%;
-  object-fit: cover;
+  width: 142px;
+  height: 40px;
 }
 
 .header-wrapper {
@@ -635,6 +631,7 @@ body.touch .burger-arrow {
   }
 
   .header-logo {
+    width: 80px;
     height: 24px;
   }
 
