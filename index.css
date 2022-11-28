@@ -109,6 +109,7 @@ p {
   display: inline-block;
   width: 142px;
   height: 42px;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .header-wrapper {
