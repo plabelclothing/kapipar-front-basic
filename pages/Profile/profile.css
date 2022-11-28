@@ -175,6 +175,25 @@
   color: #474747;
 }
 
+.password-title_hidden {
+  display: none;
+}
+
+.panel-password {
+  display: none;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.panel-password_show {
+  display: block;
+}
+
+.submit-change {
+  width: 200px;
+  height: 24px;
+}
+
 .user-address_wrapper {
   display: flex;
   flex-flow: column wrap;
@@ -447,5 +466,15 @@
 
   .order-icon {
     margin-right: 10px;
+  }
+
+  .panel-password {
+    margin-top: 6px;
+    margin-left: 20px;
+  }
+
+  .submit-change {
+    width: 162px;
+    height: 22px;
   }
 }
