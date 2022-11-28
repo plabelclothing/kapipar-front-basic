@@ -106,8 +106,8 @@ p {
 }
 
 .header-logo {
-  display: inline-block;
   width: 100%;
+  object-fit: cover;
 }
 
 .header-wrapper {
