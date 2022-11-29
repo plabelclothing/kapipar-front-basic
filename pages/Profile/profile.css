@@ -183,6 +183,7 @@
 
 .panel-password {
   display: none;
+  width: 200px;
   margin-top: 10px;
   margin-left: 60px;
 }
@@ -424,7 +425,7 @@
 
   .password-title {
     margin-top: 6px;
-    margin-left: 22px;
+    margin-left: 32px;
   }
 
   .panel-wrapper {
@@ -445,6 +446,7 @@
   }
 
   .user-address_wrapper {
+    margin-top: 10px;
     padding: 14px 0 18px 10px;
   }
 
@@ -462,6 +464,8 @@
     font-size: 9px;
     line-height: 12.6px;
     margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .popup-title {
@@ -477,12 +481,12 @@
   }
 
   .panel-password {
+    width: 200px;
     margin-top: 6px;
     margin-left: 20px;
   }
 
   .submit-change {
-    width: 162px;
     height: 22px;
     font-size: 12px;
   }
