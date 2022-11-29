@@ -417,6 +417,7 @@
   }
 
   .profile-password_wrapper {
+    height: 42px;
     margin-top: 10px;
     padding: 14px 0 18px 10px;
   }
