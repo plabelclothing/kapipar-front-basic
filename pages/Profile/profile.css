@@ -309,7 +309,7 @@
   margin: 0px 0px 1em 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     width: auto;
   }
@@ -440,7 +440,7 @@
 
   .location-btn {
     width: 180px;
-    margin: 0 auto;
+    margin-left: 25px;
   }
 
   .user-address_wrapper {
