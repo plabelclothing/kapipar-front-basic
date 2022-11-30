@@ -1,0 +1,302 @@
+@import url(../../index.css);
+@import url(../../pages/Profile/profile.css);
+
+/* main styles */
+
+.right-side_order {
+  width: 100%;
+  margin-left: 31px;
+  position: relative;
+}
+
+.my-order_title {
+  margin: 0 0 20px;
+  line-height: 30.48px;
+}
+
+.orders-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 25px 25px 25px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+}
+
+.order-title_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-title {
+  display: flex;
+  align-items: center;
+}
+
+.parcel-combine {
+  display: flex;
+  align-items: center;
+}
+
+.combine-btn {
+  margin-left: 6px;
+}
+
+.orders-cart {
+  width: 18px;
+  height: 18px;
+}
+
+.orders-title {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #141414;
+}
+
+.consolidate-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #141414;
+}
+
+.order-card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.order-image {
+  width: 100px;
+  height: 100px;
+  padding: 38px 35px 38px 20px;
+}
+
+.order-description_title {
+  margin: 20px 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.order-description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8F8E8E;
+}
+
+.order-description_subtitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8F8E8E;
+}
+
+.description-btn_wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+.description-btn {
+  width: 130px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.description-btn_line {
+  width: 110px;
+  height: 37px;
+  border: none;
+  border-radius: 50px;
+  background: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #141414;
+  cursor: pointer;
+}
+
+.description-btn_line:hover {
+  color: #8F8E8E;
+}
+
+.process-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 25px 25px 25px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+}
+
+.process-title_wrapper {
+  display: flex;
+}
+
+.process-title {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #141414;
+}
+
+.process-card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.process-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #E6E6E6;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.process-btn_wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .my-order_title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .right-side_order {
+    margin-left: 0;
+  }
+
+  .order-title_wrapper {
+    align-items: center;
+  }
+
+  .orders-cart {
+    width: 8px;
+    height: 8px;
+  }
+
+  .orders-title {
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .consolidate-title {
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .orders-wrapper {
+    margin-top: 6px;
+    padding: 9px 9px 9px;
+  }
+
+  .order-card_wrapper {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .order-card {
+    margin: 6px;
+  }
+
+  .order-image {
+    width: 75px;
+    height: 75px;
+    padding: 28px 26px 28px 15px;
+  }
+
+  .order-description_title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0 6px;
+  }
+
+  .order-description {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .order-description_subtitle {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .description-btn {
+    width: 97px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .description-btn_line {
+    width: 82px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .process-wrapper {
+    padding: 9px 9px 9px;
+  }
+
+  .process-title_wrapper {
+    align-items: center;
+  }
+
+  .process-icon {
+    width: 8px;
+    height: 8px;
+  }
+
+  .process-title {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .process-card_wrapper {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .process-card {
+    margin: 6px;
+  }
+}
