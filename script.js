@@ -33,7 +33,7 @@ const isMobile = {
 if (isMobile.any()) {
   document.body.classList.add('touch');
 
-  let menuArrows = document.querySelectorAll('.burger-arrow');
+  let menuArrows = document.querySelectorAll('.clickable-touch');
   if (menuArrows.length > 0) {
     for (let index = 0; index < menuArrows.length; index++) {
       const menuArrow = menuArrows[index]

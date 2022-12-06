@@ -1,5 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+/* -------------------- */
+
+body.pc .menu-list > li:hover .menu-sub_list {
+  display: block;
+  pointer-events: all;
+}
+
+body.touch .menu-list > li.active .menu-sub_list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+
+body.touch .menu-list > li.active .burger-arrow {
+  transform: rotate(180deg);
+  transition: all 0.3s ease 0s;
+}
+
+body.touch .burger-arrow {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 8px;
+  margin-left: 7px;
+  background-image: url(../assets/icons/dropdown-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---------------------- */
+
+@media (hover: hover) {
+  .menu-link:hover {
+    color: #8F8E8E;
+  }
+
+  .menu-sub_link:hover {
+    color: #8F8E8E;
+  }
+}
+
+
 /* reused styles */
 
 .wrapper {
@@ -123,10 +167,6 @@ p {
   line-height: 17px;
 }
 
-.menu-link:hover {
-  color: #8F8E8E;
-}
-
 .menu-btn {
   margin-left: 40px;
 }
@@ -157,10 +197,6 @@ p {
   line-height: 17px;
 }
 
-.menu-sub_link:hover {
-  color: #8F8E8E;
-}
-
 .hide-menu {
   display: none;
 }
@@ -174,41 +210,6 @@ p {
   overflow-x: hidden;
 }
 
-/* -------------------- */
-
-body.pc .menu-list > li:hover .menu-sub_list { /**** проблема бокового скролла тут, позже глянуть! ****/
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-  pointer-events: all;
-}
-
-body.touch .menu-list > li.active .menu-sub_list {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0px, 0px);
-  pointer-events: all;
-}
-
-body.touch .menu-list > li.active .burger-arrow {
-  transform: rotate(180deg);
-  transition: all 0.3s ease 0s;
-}
-
-body.touch .burger-arrow {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 8px;
-  margin-left: 7px;
-  background-image: url(../assets/icons/dropdown-icon.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* ---------------------- */
-
 @media (min-width: 1024px) {
   .menu-list {
     display: flex;
@@ -217,9 +218,7 @@ body.touch .burger-arrow {
   }
 
   .menu-sub_list {
-    transform: translate(0px, 10%);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     pointer-events: none;
     transition: all 0.3s ease 0s;
   }
@@ -234,11 +233,6 @@ body.touch .burger-arrow {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
-
-  .menu-arrow_icon:hover::after {
-    transform: rotate(180deg);
-    transition: all 0.3s ease 0s;
   }
 }
 
