@@ -293,15 +293,27 @@
   border-radius: 15px;
 }
 
+.popup-btn_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .popup-close {
-  position: absolute;
-  right: 10px;
-  top: 6px;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 34px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background: linear-gradient(96.36deg, #FFE145 37.36%, #FF8540 108.89%);
+  border-radius: 50px;
 }
 
 .popup-title {
-  font-size: 26px;
+  font-size: 22px;
   margin: 0px 0px 1em 0px;
 }
 
@@ -469,6 +481,14 @@
 
   .popup-text {
     font-size: 12px;
+  }
+
+  .popup-close {
+    width: 80px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 8px;
   }
 
   .order-icon {
