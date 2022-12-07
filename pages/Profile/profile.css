@@ -290,6 +290,7 @@
   padding: 30px;
   position: relative;
   display: block;
+  border-radius: 15px;
 }
 
 .popup-close {
