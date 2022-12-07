@@ -142,7 +142,9 @@ p {
 /* header styles */
 
 .header {
+  position: relative;
   padding: 30px 129px 28px 132px;
+  z-index: 100;
 }
 
 .header-logo {
@@ -622,6 +624,7 @@ p {
     position: relative;
     margin: 16px 16px 16px 21px;
     padding: 0;
+    z-index: 5;
   }
 
   .header-logo {
@@ -679,6 +682,21 @@ p {
   .menu-icon.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
+  }
+
+  .menu-exit_zone {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 60px;
+    left: 0;
+    z-index: 4;
+  }
+
+  .menu-exit_zone.active {
+    display: block;
   }
 
   .menu-body_wrapper {
