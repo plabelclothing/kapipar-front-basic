@@ -260,6 +260,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #lines-image {
+    background-position: 0% 2%;
+  }
+
   .my-order_title {
     margin-top: 20px;
     margin-bottom: 8px;
@@ -298,6 +302,7 @@
   .orders-wrapper {
     margin-top: 6px;
     padding: 9px 9px 9px;
+    background: #FFF;
   }
 
   .order-card_wrapper {

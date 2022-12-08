@@ -193,6 +193,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #lines-image {
+    background-position: 0% 15%;
+  }
+
   .right-side_detail {
     margin-left: 0;
     margin-top: 19px;
@@ -203,6 +207,10 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .detail-order_wrapper {
+    background: #FFF;
   }
 
   .image-description_wrapper {
