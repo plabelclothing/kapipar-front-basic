@@ -42,18 +42,20 @@
 }
 
 .left-side_profile {
-  width: 249px;
-  height: 252px;
-  padding: 20px 20px 20px;
+  width: 239px;
+  height: 262px;
+  padding: 20px;
   border: 1px solid #DADADA;
   border-radius: 5px;
 }
 
 .profile-link {
+  width: 199px;
+  height: 34px;
   display: flex;
   align-items: center;
-  padding: 8px 0 8px 15px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
@@ -323,14 +325,21 @@
     width: auto;
   }
 
+  #lines-image {
+    position: relative;
+    background: url(../../assets/icons/lines.svg) no-repeat;
+    background-position: 0% 10%;
+  }
+
   .main {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 70px;
+    position: relative;
   }
 
   .left-side_profile {
-    width: 340px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -341,10 +350,18 @@
   }
 
   .profile-link {
+    width: 157px;
+    height: 27px;
+    padding: 5px 0px 5px 10px;
     font-weight: 400;
     font-size: 9px;
     line-height: 11px;
-    padding: 4px 30px 4px 0px;
+  }
+
+  .profile-link:hover {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 14px;
   }
 
   .right-side_profile {
@@ -354,6 +371,7 @@
 
   .profile-information {
     padding: 14px 0 18px 10px;
+    background: #FFF;
   }
 
   .profile-title {
@@ -429,6 +447,7 @@
     height: 42px;
     margin-top: 10px;
     padding: 14px 0 18px 10px;
+    background: #FFF;
   }
 
   .password-title {
@@ -490,10 +509,6 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 8px;
-  }
-
-  .order-icon {
-    margin-right: 10px;
   }
 
   .panel-password {
