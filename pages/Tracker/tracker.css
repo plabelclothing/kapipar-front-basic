@@ -60,9 +60,10 @@
   width: 138px;
   height: 43px;
   top: 12px;
-  right: 0;
+  right: -20px;
+  color: #FFF;
   border-radius: 10px;
-  box-shadow: 2px 1000px 1px #F4F4F4 inset;
+  box-shadow: 0px 4px 20px rgba(94, 99, 169, 0.1);
 }
 
 @media screen and (max-width: 768px) {
