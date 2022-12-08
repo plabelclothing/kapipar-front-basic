@@ -57,16 +57,16 @@
 .owner-input {
   width: 220px;
   padding: 10px 10px 10px;
-  background: #FFFFFF;
-  border: 1px solid #8F8E8E;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
   border-radius: 5px;
 }
 
 .owner-input_small {
   padding: 10px;
   width: 190px;
-  background: #FFFFFF;
-  border: 1px solid #8F8E8E;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
   border-radius: 5px;
 }
 
@@ -91,8 +91,8 @@
 
 .package-input {
   padding: 10px 10px 10px;
-  background: #FFFFFF;
-  border: 1px solid #8F8E8E;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
   border-radius: 5px;
   background: url(../../assets/icons/euro-icon.svg) no-repeat;
   background-position: 96% 50%;
@@ -125,8 +125,8 @@
 
 .shipping-size_wrapper {
   padding: 10px 10px 10px;
-  background: #F5F5F5;
-  border: 1px solid #E4E4E4;
+  background: #f5f5f5;
+  border: 1px solid #e4e4e4;
   border-radius: 5px;
 }
 
@@ -168,8 +168,8 @@
   width: 71px;
   height: 43px;
   padding: 10px;
-  background: #FFFFFF;
-  border: 1px solid #8F8E8E;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
   border-radius: 5px;
   color: #141414;
 }
@@ -183,7 +183,7 @@
   margin-bottom: 71px;
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .price-wrapper {
@@ -206,7 +206,7 @@
   font-weight: 700;
   font-size: 80px;
   line-height: 104px;
-  background: linear-gradient(96.36deg, #FFE145 37.36%, #FF8540 108.89%);
+  background: linear-gradient(96.36deg, #ffe145 37.36%, #ff8540 108.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -233,7 +233,7 @@
     position: absolute;
     width: 100%;
     height: 380px;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   .main {
@@ -286,14 +286,14 @@
   .owner-input {
     width: 146px;
     padding: 7px;
-    color: #8F8E8E;
+    color: #8f8e8e;
   }
 
   .owner-input_small {
     padding: 7px;
     width: 130px;
-    background: #FFFFFF;
-    border: 1px solid #8F8E8E;
+    background: #ffffff;
+    border: 1px solid #8f8e8e;
     border-radius: 3.6px;
   }
 

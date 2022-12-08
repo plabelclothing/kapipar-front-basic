@@ -144,7 +144,6 @@ p {
 .header {
   position: relative;
   padding: 30px 129px 28px 132px;
-  z-index: 100;
 }
 
 .header-logo {
