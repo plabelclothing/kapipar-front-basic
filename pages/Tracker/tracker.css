@@ -1,5 +1,5 @@
 @import url(../../index.css);
-@import url(../Order/order.css);
+@import url(../Profile/profile.css);
 
 .right-side_tracker {
   width: 100%;
@@ -67,6 +67,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  #lines-image {
+    background: url(../../assets/icons/lines.svg) no-repeat;
+    background-position: 0% 18%;
+  }
+
   .right-side_tracker {
     margin-left: 0;
     margin-top: 19px;
@@ -112,14 +117,16 @@
   }
 
   .tracker-input {
+    width: 97%;
     font-size: 9px;
     line-height: 12px;
-    padding: 12px 0px 12px 2px;
+    padding: 12px 0px 12px 10px;
   }
 
   .tracker-btn {
     width: 48px;
     height: 20px;
+    right: 10px;
     top: 8px;
     font-size: 9px;
     line-height: 12px;
