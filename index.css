@@ -211,32 +211,6 @@ p {
   overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
-  .menu-list {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  .menu-sub_list {
-    display: none;
-    pointer-events: none;
-    transition: all 0.3s ease 0s;
-  }
-
-  .menu-arrow_icon::after {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 8px;
-    margin-left: 7px;
-    background-image: url(../assets/icons/dropdown-icon.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
 /* footer styles */
 
 .footer {
@@ -341,7 +315,7 @@ p {
   margin: 0;
 }
 
-.сonfidentiality {
+.confidentiality {
   display: flex;
   justify-content: space-between;
   padding-top: 25px;
@@ -404,7 +378,7 @@ p {
 }
 
 .delivery-image {
-  width: 573.67px;
+  width: 574px;
   height: 300px;
 }
 
@@ -412,7 +386,6 @@ p {
 
 .payment-wrapper {
   display: flex;
-  width: 1097px;
   margin: 200px 0 0 71px;
 }
 
@@ -614,7 +587,7 @@ p {
 
 /* responsive styles for mobile */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1023px) {
   .wrapper {
     width: auto;
   }
@@ -827,7 +800,6 @@ p {
   }
 
   .payment-wrapper {
-    position: relative;
     display: flex;
     flex-flow: wrap;
     width: 335px;
@@ -840,8 +812,6 @@ p {
 
   .payment-image {
     width: 235px;
-    position: absolute;
-    margin: 0 40px 0;
   }
 
   .payment-title {
@@ -855,7 +825,7 @@ p {
 
   .payment-description {
     width: 335px;
-    margin: 200px 0 25px;
+    margin: 0 0 25px;
     font-size: 9px;
     line-height: 12.6px;
   }
@@ -1123,7 +1093,7 @@ p {
     margin-left: 40px;
   }
 
-  .сonfidentiality {
+  .confidentiality {
     margin: 0;
     padding: 10px 20px 17px;
   }
@@ -1140,5 +1110,31 @@ p {
   .policy-text {
     font-size: 9px;
     line-height: 10.97px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-list {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-sub_list {
+    display: none;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .menu-arrow_icon::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 8px;
+    margin-left: 7px;
+    background-image: url(../assets/icons/dropdown-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
