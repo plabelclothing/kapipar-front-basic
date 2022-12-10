@@ -76,6 +76,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+  gap: 10px;
 }
 
 .order-card {
@@ -83,7 +84,6 @@
   align-items: center;
   border: 1px solid #E6E6E6;
   border-radius: 20px;
-  margin: 10px;
 }
 
 .order-image {
@@ -259,7 +259,7 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   #lines-image {
     background-position: 0% 2%;
   }
@@ -307,11 +307,8 @@
 
   .order-card_wrapper {
     flex-direction: column;
-    margin-top: 0px;
-  }
-
-  .order-card {
-    margin: 6px;
+    margin-top: 6px;
+    gap: 6px;
   }
 
   .order-image {
