@@ -17,7 +17,7 @@
 .shipping-check_title-wrapper {
   display: flex;
   align-items: center;
-  padding: 31px 0 0 59px;
+  margin-top: 59px;
 }
 
 .shipping-check_title {
@@ -66,7 +66,7 @@
   box-shadow: 0px 4px 20px rgba(94, 99, 169, 0.1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   #lines-image {
     background: url(../../assets/icons/lines.svg) no-repeat;
     background-position: 0% 18%;
@@ -88,7 +88,7 @@
   }
 
   .shipping-check_title-wrapper {
-    padding: 3px 16px 0;
+    margin: 3px 0 0;
   }
 
   .track-icon {
