@@ -40,6 +40,9 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+}
+
+.select-input {
   background: url(../../assets/icons/dropdown-icon.svg) no-repeat;
   background-position: 97% 50%;
 }
