@@ -47,7 +47,7 @@ body.touch .burger-arrow {
 /* reused styles */
 
 .wrapper {
-  width: 1429px;
+  max-width: 1429px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
@@ -354,11 +354,10 @@ p {
 }
 
 .delivery {
-  width: 624px;
+  max-width: 624px;
 }
 
 .delivery-title {
-  width: 624px;
   margin: 0px;
   margin: 12px 0 25px 0;
 }
@@ -368,7 +367,7 @@ p {
 }
 
 .delivery-description {
-  width: 464px;
+  max-width: 464px;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -378,7 +377,7 @@ p {
 }
 
 .delivery-image {
-  width: 574px;
+  max-width: 574px;
   height: 300px;
 }
 
@@ -390,17 +389,17 @@ p {
 }
 
 .payment-image {
-  width: 469px;
+  max-width: 469px;
   height: 300px;
 }
 
 .payment {
-  max-width: 505px;
+  width: 505px;
   margin: 0 0 0 122px;
 }
 
 .payment-title {
-  margin: 0 2px 25px 0;
+  margin: 0 62px 25px 0;
   font-size: 25px;
   line-height: 30px;
   color: #141414;
@@ -411,6 +410,7 @@ p {
 }
 
 .payment-description {
+  max-width: 505px;
   margin: 0 0 25px 0;
 }
 
@@ -587,9 +587,9 @@ p {
 
 /* responsive styles for mobile */
 
-@media screen and (max-width: 1023px) {
+@media (min-width: 320px) and (max-width: 819px) {
   .wrapper {
-    width: auto;
+    min-width: 320px;
   }
 
   .header {
@@ -766,22 +766,21 @@ p {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
+    align-items: center;
   }
 
   .delivery {
-    width: 296px;
+    width: auto;
     margin: 30px 39px 0 35px;
   }
 
   .delivery-title {
-    width: 301px;
     margin: 0 0 20px;
     font-size: 25px;
     line-height: 30px;
   }
 
   .delivery-description {
-    width: 243px;
     margin-bottom: 20px;
     font-size: 12px;
     line-height: 16.8px;
@@ -789,7 +788,9 @@ p {
 
   .delivery-image {
     position: relative;
-    width: auto;
+    width: 100%;
+    max-width: 567px;
+    height: 100%;
     right: 26px;
     z-index: 1;
   }
@@ -801,17 +802,22 @@ p {
 
   .payment-wrapper {
     display: flex;
-    flex-flow: wrap;
-    width: 335px;
-    margin: 70px 20px 0;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
   }
 
   .payment {
-    margin: 0 auto;
+    width: auto;
+    margin: 30px 20px 0;
   }
 
   .payment-image {
-    width: 235px;
+    width: 100%;
+    max-width: 402px;
+    height: 100%;
+    margin-bottom: 20px;
   }
 
   .payment-title {
@@ -824,7 +830,6 @@ p {
   }
 
   .payment-description {
-    width: 335px;
     margin: 0 0 25px;
     font-size: 9px;
     line-height: 12.6px;
@@ -837,7 +842,7 @@ p {
 
   .join-us {
     margin: 134px 20px 0;
-    text-align: left;
+    text-align: center;
   }
 
   .join-us_title {
@@ -845,8 +850,7 @@ p {
   }
 
   .join-us_description {
-    width: 335px;
-    margin: 0;
+    margin: 0 20px 0;
     font-size: 9px;
     line-height: 12.6px;
   }
@@ -858,55 +862,59 @@ p {
   }
 
   .join-us_cards {
-    width: 223px;
+    min-width: 223px;
     margin-right: 0;
     margin-bottom: 10px;
   }
 
   .join-us_sign_image {
-    width: 135px;
+    min-width: 135px;
     margin: 41px 44px 0;
     padding: 0;
   }
 
   .join-us_sign_title {
-    margin: 9px 21px 0;
+    margin: 9px 0 0;
     padding: 0;
     font-size: 10px;
     line-height: 13px;
+    text-align: center;
   }
 
   .join-us_sign_description {
-    margin: 9px 44px 41px;
+    margin: 9px 0 41px;
     padding: 0;
     font-size: 9px;
     line-height: 11.7px;
+    text-align: center;
   }
 
   .join-us_shopping_image {
-    width: 143px;
+    min-width: 143px;
     padding: 0;
     margin: 35px 40px 0;
   }
 
   .join-us_shopping_title {
-    margin: 9px 33px 0;
+    margin: 9px 0 0;
     padding: 0;
     text-align: center;
     font-size: 10px;
     line-height: 13px;
+    text-align: center;
   }
 
   .join-us_shopping_description {
     width: auto;
-    margin: 9px 28px 35px;
+    margin: 9px 0 35px;
     padding: 0;
     font-size: 9px;
     line-height: 11.7px;
+    text-align: center;
   }
 
   .join-us_export_image {
-    width: 179px;
+    max-width: 282px;
     padding: 0;
     margin: 43px 22px 0;
   }
@@ -920,10 +928,11 @@ p {
   }
 
   .join-us_export_description {
-    margin: 9px 14px 43px;
+    margin: 9px 0 43px;
     padding: 0;
     font-size: 9px;
     line-height: 11.7px;
+    text-align: center;
   }
 
   .our-service {
@@ -931,9 +940,9 @@ p {
   }
 
   .package-consolidation-wrapper {
-    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .package-consolidation {
@@ -952,31 +961,28 @@ p {
   }
 
   .our-service_image {
-    position: absolute;
-    top: 68px;
-    margin: 0 20px 0;
+    width: 100%;
+    max-width: 402px;
+    margin: 0 0 20px;
+    height: 100%;
   }
 
   .package-consolidation_description {
-    margin: 282px 0 20px;
+    margin: 20px 0 20px;
     font-size: 9px;
     line-height: 12.6px;
     text-align: left;
   }
 
-  .read-more {
-    margin: 0 108px 0;
-  }
-
   .slimming-parcels_wrapper {
-    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 40px;
+    align-items: center;
   }
 
   .slimming-parcels {
-    margin: 0;
+    margin: 30px 20px 0;
   }
 
   .slimming-parcels_title {
@@ -990,25 +996,23 @@ p {
   }
 
   .slimming-parcels_image {
-    position: absolute;
-    top: 82px;
-    width: 250px;
-    margin: 0px 58px 0;
+    width: 100%;
+    max-width: 402px;
+    margin: 0 0 20px;
   }
 
   .slimming-parcels_description {
-    width: 335px;
-    margin: 254px 0 24px;
+    margin: 20px 0 24px;
     font-size: 9px;
     line-height: 12.6px;
     text-align: left;
   }
 
   .taking-pictures_wrapper {
-    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 40px;
+    align-items: center;
   }
 
   .taking-pictures {
@@ -1026,14 +1030,12 @@ p {
   }
 
   .taking-pictures_image {
-    position: absolute;
-    top: 120px;
-    width: 250px;
-    margin: 0 40px 0;
+    max-width: 402px;
+    margin-bottom: 20px;
   }
 
   .taking-pictures_description {
-    margin: 250px 0 20px;
+    margin: 20px 0 20px;
     font-size: 9px;
     line-height: 12.6px;
     text-align: left;
@@ -1113,7 +1115,136 @@ p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 820px) and (max-width: 1279px) {
+  .wrapper {
+    min-width: 820px;
+  }
+
+  .header {
+    padding: 30px;
+  }
+
+  .header-logo {
+    width: 120px;
+    height: 32px;
+  }
+
+  .menu-list > li {
+    margin: 0 0 0 10px;
+  }
+
+  .menu-link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .menu-btn {
+    width: 112px;
+    height: 34px;
+    margin-left: 20px;
+  }
+
+  .menu-list {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-sub_list {
+    display: none;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  .menu-arrow_icon::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+    margin-left: 7px;
+    background-image: url(../assets/icons/dropdown-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu-sub_list {
+    padding: 10px;
+  }
+
+  .menu-sub_link {
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  .menu-sub_list li {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    margin: 134px 30px 0;
+  }
+
+  .delivery {
+    min-width: 357px;
+  }
+
+  .delivery-wrapper {
+    margin: 0;
+  }
+
+  .delivery-image {
+    width: 402px;
+    height: 100%;
+  }
+
+  .payment-wrapper {
+    margin: 200px 0 0 0;
+  }
+
+  .payment-image {
+    width: 402px;
+    height: 100%;
+  }
+
+  .payment {
+    margin: 0 0 0 52px;
+  }
+
+  .join-us_cards_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-service {
+    margin: 221px 0 0 0;
+  }
+
+  .package-consolidation {
+    margin-right: 120px;
+  }
+
+  .taking-pictures {
+    margin-right: 20px;
+  }
+
+  .slimming-parcels {
+    margin-left: 120px;
+  }
+
+  .save-money {
+    max-width: 100%;
+    flex-direction: column-reverse;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .footer {
+    padding: 95px 83px 25px 83px;
+  }
+}
+
+@media (min-width: 1280px) {
   .menu-list {
     display: flex;
     align-items: center;
