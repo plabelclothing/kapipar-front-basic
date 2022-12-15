@@ -1030,6 +1030,7 @@ p {
   }
 
   .taking-pictures_image {
+    width: 100%;
     max-width: 402px;
     margin-bottom: 20px;
   }
