@@ -89,7 +89,47 @@
 
 /* media */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
+  .ourbussines-image_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .title-wrapper {
+    margin: 60px 30px 60px;
+  }
+
+  .word-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .main-ourbussines {
+    margin: 0 30px 80px;
+  }
+
+  .cube-wrapper {
+    flex-direction: column;
+  }
+
+  .cube {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .cube-title {
+    text-align: center;
+  }
+
+  .cube-description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }
