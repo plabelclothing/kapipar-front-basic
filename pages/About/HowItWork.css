@@ -62,6 +62,7 @@
 }
 
 .sing-up {
+  max-width: 505px;
   margin-left: 163px;
 }
 
@@ -73,6 +74,7 @@
 }
 
 .shop-in {
+  max-width: 535px;
   margin: 10px 117px 10px 0;
 }
 
@@ -84,12 +86,43 @@
 }
 
 .sending {
+  max-width: 535px;
   margin-left: 78px;
 }
 
 /* mobile view */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 60px 30px 80px;
+  }
+
+  .sing-up_wrapper {
+    justify-content: center;
+  }
+
+  .sing-up {
+    max-width: 408px;
+  }
+
+  .shop-in_wrapper {
+    justify-content: center;
+  }
+
+  .shop-in {
+    max-width: 408px;
+  }
+
+  .sending-wrapper {
+    justify-content: center;
+  }
+
+  .sending {
+    max-width: 408px;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }
@@ -135,6 +168,7 @@
   .sing-up_wrapper {
     display: flex;
     flex-flow: column;
+    align-items: center;
     margin-top: 70px;
   }
 
@@ -148,7 +182,7 @@
   }
 
   .about-works_title {
-    margin: 0 0 20px;
+    margin: 20px 0 20px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -160,13 +194,13 @@
   }
 
   .about-works_description {
-    margin-top: 20px;
+    margin: 20px 0 20px;
     font-size: 9px;
     line-height: 12.6px;
   }
 
   .shop-in_wrapper {
-    flex-flow: column;
+    flex-flow: column-reverse;
     margin-top: 70px;
     align-items: center;
   }
