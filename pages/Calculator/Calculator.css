@@ -1,10 +1,6 @@
 @import url(../../index.css);
 @import url(../AboutPage/AboutFaq.css);
 
-.wrapper {
-  width: 1429px;
-}
-
 /* calculator styles */
 
 .main {
@@ -218,7 +214,22 @@
 
 /* media 768px */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 134px 30px 80px;
+  }
+
+  .calculator-payment-wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .owner-information {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }
