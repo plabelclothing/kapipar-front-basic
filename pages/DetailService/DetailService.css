@@ -1,9 +1,5 @@
 @import url(../../index.css);
 
-.wrapper {
-  width: 1429px;
-}
-
 .detail-main {
   position: relative;
   margin: 122px 199px 50px 203px;
@@ -79,7 +75,17 @@
   margin-right: 105px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
+  .detail-main {
+    margin: 60px 30px 30px;
+  }
+
+  .testimonials-wrapper {
+    margin: 0 30px 80px;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }
