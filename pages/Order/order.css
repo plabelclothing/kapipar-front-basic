@@ -259,7 +259,18 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 134px 30px 80px;
+  }
+
+  .order-card_wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 819px) {
   #lines-image {
     background-position: 0% 2%;
   }

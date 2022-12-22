@@ -320,7 +320,13 @@
   margin: 0px 0px 1em 0px;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 134px 30px 80px;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }
