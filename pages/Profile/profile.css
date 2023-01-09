@@ -491,6 +491,7 @@
   .user-location_wrapper {
     margin-top: 6px;
     margin-left: 22px;
+    gap: 4px;
   }
 
   .location-input {

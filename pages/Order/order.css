@@ -244,6 +244,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+  gap: 10px;
 }
 
 .process-card {
@@ -251,7 +252,6 @@
   align-items: center;
   border: 1px solid #E6E6E6;
   border-radius: 20px;
-  margin: 10px;
 }
 
 .process-btn_wrapper {
@@ -268,11 +268,20 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .process-card_wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 819px) {
   #lines-image {
     background-position: 0% 2%;
+  }
+
+  .main {
+    margin: 20px 20px 80px;
   }
 
   .my-order_title {
@@ -385,9 +394,5 @@
   .process-card_wrapper {
     flex-direction: column;
     margin-top: 0;
-  }
-
-  .process-card {
-    margin: 6px;
   }
 }

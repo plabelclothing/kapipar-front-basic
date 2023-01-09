@@ -109,7 +109,13 @@
 
 /* media */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1279px) {
+  .wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 819px) {
   .wrapper {
     width: auto;
   }

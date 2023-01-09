@@ -167,9 +167,9 @@
 
   .sing-up_wrapper {
     display: flex;
-    flex-flow: column;
-    align-items: center;
+    flex-direction: column;
     margin-top: 70px;
+    align-items: center;
   }
 
   .sing-up {
@@ -177,8 +177,7 @@
   }
 
   .sing-up_image {
-    width: 335px;
-    height: 250px;
+    display: inline-block;
   }
 
   .about-works_title {
@@ -210,12 +209,11 @@
   }
 
   .shop-in_image {
-    width: 335px;
-    height: 250px;
+    display: inline-block;
   }
 
   .sending-wrapper {
-    flex-flow: column;
+    flex-direction: column;
     margin-top: 70px;
     align-items: center;
   }
@@ -225,8 +223,7 @@
   }
 
   .sending-image {
-    width: 335px;
-    height: 250px;
+    display: inline-block;
   }
 }
 

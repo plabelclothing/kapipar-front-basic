@@ -78,6 +78,10 @@
     background-position: 0% 18%;
   }
 
+  .main {
+    margin: 20px 20px 80px;
+  }
+
   .right-side_tracker {
     margin-left: 0;
     margin-top: 19px;
