@@ -1,0 +1,142 @@
+@import url(../../index.css);
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+/* careers styles */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 227px 252px 150px;
+}
+
+.careers-background {
+  position: absolute;
+  top: 72px;
+}
+
+.careers-title {
+  margin: 0 0 25px;
+}
+
+.careers-description {
+  margin: 0 171px 50px 151px;
+  text-align: center;
+}
+
+.careers-cards_wrapper {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.careers-cards_wrapper:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.careers-cards {
+  padding: 20px 20px 20px;
+  margin-right: 25px;
+  background: #F5F5F5;
+  border-radius: 10px;
+}
+
+.careers-cards:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.careers-cards_title {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.careers-cards_subtitle {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 10px;
+  line-height: 12.1px;
+  color: #141414;
+}
+
+.careers-cards_description {
+  margin: 0;
+  padding: 0 0 10px 0;
+  font-size: 12px;
+  line-height: 16.8px;
+}
+
+.careers-btn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.careers-btn_title {
+  margin: 0;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #000;
+}
+
+.careers-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.careers-cards_underline {
+  margin: 0;
+  margin: 10px 0 0;
+}
+
+/* media */
+
+@media (min-width: 820px) and (max-width: 1279px) {
+  .wrapper {
+    min-width: 820px;
+  }
+
+  .main {
+    margin: 134px 30px 80px;
+  }
+}
+
+
+@media screen and (max-width: 819px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .careers-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
+  }
+
+  .main {
+    position: relative;
+    margin: 40px 20px 20px;
+    z-index: 5;
+  }
+
+  .careers-description {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .careers-cards_wrapper {
+    flex-direction: column;
+  }
+
+  .careers-cards {
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}

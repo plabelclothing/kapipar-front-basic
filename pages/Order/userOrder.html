@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../normalize.css" />
   <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../DetailService/DetailService.css" />
+  <link rel="stylesheet" href="../Order/userOrder.css" />
   <title>Kapipar</title>
 </head>
 <body>
@@ -61,7 +61,7 @@
                   </span>
                   <ul class="menu-sub_list menu-sub_small">
                     <li><a href="" class="menu-sub_link">Ger</a></li>
-                    <li><a href="" class="menu-sub_link">Pol</a></li>
+                    <li><a href="" class="menu-sub_link">BY</a></li>
                   </ul>
                 </li>
               </ul>
@@ -70,72 +70,51 @@
         </div>
       </div>
     </header>
-    <img class="detail-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="detail-main">
-      <div class="detail-package">
-        <div class="greeting-wrapper">
-          <h1 class="greeting-title">Package Consolidation</h1>
-          <p class="greeting-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam sit amet felis vel ante vestibulum sollicitudin.
-            Praesent efficitur condimentum lacus, sagittis vehicula
-            tortor dictum vel.
-          </p>
-          <button class="get-btn">Get address</button>
+    <div class="main">
+      <h1 class="order-calculator_title">Where to send your package</h1>
+      <p class="order-calculator_subtitle">Where will we be sending the package?</p>
+      <div class="order-calculator_wrapper">
+        <div class="order-wrapper">
+          <label class="order-input_title" for="">Country</label>
+          <select class="order-input select-input">
+            <option value="">Poland</option>
+            <option value="">UK</option>
+            <option value="">Lithuania</option>
+            <option value="">Latvia</option>
+          </select>
+          <label class="order-input_title" for="">Package type</label>
+          <select class="order-input select-input">
+            <option value="">Big</option>
+            <option value="">Large</option>
+            <option value="">Small</option>
+          </select>
+          <label class="order-input_title" for="">Some select</label>
+          <select class="order-input select-input">
+            <option value="">nothing</option>
+            <option value="">big nothing</option>
+            <option value="">Small nothing</option>
+          </select>
+          <label class="order-input_title" for="">Address</label>
+          <input class="order-input" type="text" placeholder="17 Kensington Street">
+          <label class="order-input_title" for="">Some input</label>
+          <input class="order-input" type="text" placeholder="Hello input">
+          <label class="order-input_title" for="">second some input</label>
+          <input class="order-input" type="text" placeholder="Hello second input">
+          <label class="order-input_title" for="">three some input</label>
+          <input class="order-input" type="text" placeholder="Hello three input">
+          <div class="order-btn_wrapper">
+            <button class="get-btn order-btn">Calculate</button>
+            <button class="get-btn order-btn">Order</button>
+          </div>
         </div>
-        <img src="../../assets/images/delivery-v2.svg" alt="">
-      </div>
-      <div class="detail-description">
-        <h4 class="detail-description_title">Lorem Ipsum</h4>
-        <p class="detail-description_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Quisque eleifend ac ligula eget
-          convallis. Aliquam erat volutpat. Duis ac posuere nisi,
-          id consequat tellus. Phasellus ornare ligula eget enim
-          tempor pretium. Pellentesque hendrerit cursus consectetur.
-          Praesent facilisis ut dui vel dignissim. Nulla dignissim
-          justo at lobortis sodales. Maecenas dapibus dolor purus,
-          vel hendrerit ipsum cursus at. Maecenas eu nibh eros. In
-          hac habitasse platea dictumst. In leo arcu, suscipit in
-          laoreet et, sagittis vitae ex.
-        </p>
-        <div class="grants-wrapper">
-          <div class="grants-cards">
-            <img src="../../assets/icons/police-badge.svg" alt="police-badge">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/tech-support.svg" alt="tech-support">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/refund.svg" alt="refund">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/credit-cards.svg" alt="credit-cards">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="calculator-wrapper">
+          <div class="calculator-text_wrapper">
+            <p class="calculator-title">Your Price Is :</p>
+            <p class="calculator-price">13.89  €</p>
+            <p class="calculator-description">usually it takes about 14 days for delivery</p>
           </div>
         </div>
       </div>
-    </section>
-    <div class="testimonials-wrapper">
-      <div class="testimonials">
-        <h4>Testimonials</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus.
-        </p>
-        <button class="get-btn">Get address</button>
-      </div>
-      <div></div>
     </div>
     <footer class="footer">
       <div class="link-wrapper">

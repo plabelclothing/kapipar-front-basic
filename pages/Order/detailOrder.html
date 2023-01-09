@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../normalize.css" />
   <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../DetailService/DetailService.css" />
+  <link rel="stylesheet" href="../Order/detailOrder.css" />
   <title>Kapipar</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div id="lines-image" class="wrapper">
     <header class="header">
       <div class="header-wrapper">
         <a href="../../index.html">
@@ -23,7 +23,7 @@
           <div class="menu-body_wrapper">
             <nav class="menu-body">
               <ul class="menu-list">
-                <li><a href="../../index.html" class="menu-link">Home</a></li>
+                <li><a href="../index.html" class="menu-link">Home</a></li>
                 <li>
                   <span class="menu-link menu-arrow_icon clickable-touch">About
                     <span class="burger-arrow"></span>
@@ -70,78 +70,102 @@
         </div>
       </div>
     </header>
-    <img class="detail-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="detail-main">
-      <div class="detail-package">
-        <div class="greeting-wrapper">
-          <h1 class="greeting-title">Package Consolidation</h1>
-          <p class="greeting-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam sit amet felis vel ante vestibulum sollicitudin.
-            Praesent efficitur condimentum lacus, sagittis vehicula
-            tortor dictum vel.
-          </p>
-          <button class="get-btn">Get address</button>
+    <div class="main">
+      <aside class="left-side_profile">
+        <a class="profile-link" href="../Profile/profile.html">
+          <img class="profile-link_icon" src="../../assets/icons/profile-icon.svg" alt="profile-icon">
+          Profile
+        </a>
+        <a class="profile-link" href="../Order/order.html">
+          <img class="profile-link_icon order-icon" src="../../assets/icons/order-icon.svg" alt="order-icon">
+          My Orders
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          Track Your Package
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          My address
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/logout-icon.svg" alt="logout-icon">
+          Log Out
+        </a>
+      </aside>
+      <div class="right-side_detail">
+        <h2 class="detail-order_title">Detail Order</h2>
+        <div class="detail-order_wrapper">
+          <div class="image-description_wrapper">
+            <img class="big-box_image" src="../../assets/images/big-box-image.svg" alt="big-box-image">
+            <div class="detail-description_wrapper">
+              <h1 class="detail-description_title">Package Iphone</h1>
+              <div class="subtitle-wrapper">
+                <p class="subtitle">Sender : Apple Store Poland</p>
+                <p class="subtitle">Date : 23 May 2022</p>
+              </div>
+              <p class="detail-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              </p>
+            </div>
+          </div>
+          <div class="detail-photo_wrapper">
+            <h3 class="photo-title">Photos</h3>
+            <div class="photo-wrapper">
+              <img class="photo-image" src="../../assets/images/unknown-image.svg" alt="unknown-image">
+              <img class="photo-image" src="../../assets/images/unknown-image.svg" alt="unknown-image">
+              <img class="photo-image" src="../../assets/images/unknown-image.svg" alt="unknown-image">
+              <img class="photo-image" src="../../assets/images/unknown-image.svg" alt="unknown-image">
+            </div>
+            <div id="modal" class="modal">
+              <div class="popup-area"></div>
+              <div class="modal-body">
+                <span id="modal-close" class="modal-close">&times;</span>
+                <img id="modal-content" class="modal-content">
+              </div>
+            </div>
+          </div>
+          <div class="more-service_wrapper">
+            <h3 class="more-service_title">Need More Service ?</h3>
+            <div class="more-card_wrapper">
+              <div class="more-card">
+                <aside>
+                  <input class="card-input" type="checkbox" name="" id="">
+                </aside>
+                <div class="card-right_wrapper">
+                  <img class="card-right_image" src="../../assets/images/delivery-v4.svg" alt="">
+                  <p class="card-right_description">Taking Pictures</p>
+                </div>
+              </div>
+              <div class="more-card">
+                <aside>
+                  <input class="card-input" type="checkbox" name="" id="">
+                </aside>
+                <div class="card-right_wrapper">
+                  <img class="card-right_image" src="../../assets/images/delivery-v3.svg" alt="">
+                  <p class="card-right_description">Repacking</p>
+                </div>
+              </div>
+              <div class="more-card">
+                <aside>
+                  <input class="card-input" type="checkbox" name="" id="">
+                </aside>
+                <div class="card-right_wrapper last-card_wrapper">
+                  <img class="card-right_image last-card_image" src="../../assets/images/delivery-v2.svg" alt="">
+                  <p class="card-right_description last-card_derscription">Package Consilidation</p>
+                </div>
+              </div>
+            </div>
+            <button class="get-btn more-service_btn">Add</button>
+          </div>
         </div>
-        <img src="../../assets/images/delivery-v2.svg" alt="">
       </div>
-      <div class="detail-description">
-        <h4 class="detail-description_title">Lorem Ipsum</h4>
-        <p class="detail-description_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Quisque eleifend ac ligula eget
-          convallis. Aliquam erat volutpat. Duis ac posuere nisi,
-          id consequat tellus. Phasellus ornare ligula eget enim
-          tempor pretium. Pellentesque hendrerit cursus consectetur.
-          Praesent facilisis ut dui vel dignissim. Nulla dignissim
-          justo at lobortis sodales. Maecenas dapibus dolor purus,
-          vel hendrerit ipsum cursus at. Maecenas eu nibh eros. In
-          hac habitasse platea dictumst. In leo arcu, suscipit in
-          laoreet et, sagittis vitae ex.
-        </p>
-        <div class="grants-wrapper">
-          <div class="grants-cards">
-            <img src="../../assets/icons/police-badge.svg" alt="police-badge">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/tech-support.svg" alt="tech-support">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/refund.svg" alt="refund">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/credit-cards.svg" alt="credit-cards">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="testimonials-wrapper">
-      <div class="testimonials">
-        <h4>Testimonials</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus.
-        </p>
-        <button class="get-btn">Get address</button>
-      </div>
-      <div></div>
     </div>
     <footer class="footer">
       <div class="link-wrapper">
         <div class="also-on">
           <h4 class="also-title">WE ARE ALSO ON</h4>
-          <hr class="also-underline">
+          <hr class="also-underline" />
           <div class="social-media">
             <a class="social-icon" href="instagram.com">
               <div class="icon-instagram"></div>
@@ -170,7 +194,7 @@
           <a href="../About/careers.html" class="also-links">Career</a>
         </div>
       </div>
-      <hr class="underline">
+      <hr class="underline" />
       <div class="confidentiality">
         <p class="copyright">Copyright © 2022</p>
         <div class="privacy-policy_wrapper">
@@ -181,5 +205,6 @@
     </footer>
   </div>
   <script src="../../script.js"></script>
+  <script src="../Order/detailOrder.js"></script>
 </body>
 </html>

@@ -1,0 +1,202 @@
+@import url(../../index.css);
+
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 122px 273px 100px;
+}
+
+.bussines-background {
+  position: absolute;
+  top: 100px;
+}
+
+.title {
+  margin: 0 0 25px;
+}
+
+.description {
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+/* main-ourbussines styles */
+
+.main-ourbussines {
+  margin: 0 203px 150px;
+}
+
+.ourbussines-image_wrapper {
+  display: flex;
+  margin: 0 13px 0;
+}
+
+.word-wrapper {
+  margin-right: 40px;
+}
+
+.word-title {
+  margin: 10px 0 10px;
+}
+
+.word-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+.some-text {
+  margin: 50px 0 0;
+}
+
+.some-description {
+  margin: 15px 0 0;
+}
+
+.cube-wrapper {
+  display: flex;
+  margin: 49px 0 150px;
+}
+
+.cube {
+  margin-right: 73px;
+  border-radius: 20px;
+  background-color: #141414;
+}
+
+.cube:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.cube-title {
+  margin: 20px 20px 3px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.cube-description {
+  margin: 0 20px 0;
+  color: #fff;
+  font-size: 70px;
+  line-height: 84.72px;
+}
+
+/* media */
+
+@media screen and (max-width: 1279px) {
+  .ourbussines-image_wrapper {
+    flex-wrap: wrap;
+  }
+
+  .title-wrapper {
+    margin: 60px 30px 60px;
+  }
+
+  .word-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .main-ourbussines {
+    margin: 0 30px 80px;
+  }
+
+  .cube-wrapper {
+    flex-direction: column;
+  }
+
+  .cube {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .cube-title {
+    text-align: center;
+  }
+
+  .cube-description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .bussines-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
+  }
+
+  .title-wrapper {
+    position: relative;
+    margin: 40px 20px 20px;
+    z-index: 8;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 22.2px;
+  }
+
+  .main-ourbussines {
+    position: relative;
+    margin: 20px 20px 20px;
+    z-index: 7;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22.2px;
+  }
+
+  .ourbussines-image_wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .word-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .word-image {
+    width: 80px;
+  }
+
+  .cube-wrapper {
+    flex-direction: column;
+    margin: 49px 0 80px;
+  }
+
+  .cube {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .cube-title {
+    text-align: center;
+  }
+
+  .cube-description {
+    text-align: center;
+  }
+}

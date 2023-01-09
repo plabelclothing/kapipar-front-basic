@@ -1,0 +1,363 @@
+@import url(../../index.css);
+@import url(../AboutPage/AboutFaq.css);
+
+/* calculator styles */
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 227px 130px 79px;
+}
+
+.calculator-background {
+  position: absolute;
+  top: 126px;
+}
+
+.calculator-title_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator-title {
+  margin: 0;
+}
+
+.calculator-description {
+  margin: 25px 0 50px;
+}
+
+.owner-information {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  padding-top: 33px;
+}
+
+.owner-country_wrapper {
+  margin-right: 20px;
+}
+
+.owner-postal_wrapper {
+  margin-right: 36px;
+}
+
+.owner-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.owner-input {
+  width: 220px;
+  padding: 10px 10px 10px;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
+  border-radius: 5px;
+}
+
+.owner-input_small {
+  padding: 10px;
+  width: 190px;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
+  border-radius: 5px;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.panel.show {
+  display: block;
+  opacity: 1;
+  max-height: 200px;
+}
+
+.package-title {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  line-height: 23.4px;
+}
+
+.package-input {
+  padding: 10px 10px 10px;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
+  border-radius: 5px;
+  background: url(../../assets/icons/euro-icon.svg) no-repeat;
+  background-position: 96% 50%;
+}
+
+.block-1_wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.block-2_wrapper {
+  display: flex;
+}
+
+.calculator-payment-wrapper {
+  display: flex;
+  z-index: 1;
+}
+
+.package-insure_wrapper {
+  display: flex;
+  margin: 30px 0 10px;
+  align-items: center;
+}
+
+.package-insure_description {
+  margin: 0 0 0 15px;
+  color: #141414;
+}
+
+.shipping-size_wrapper {
+  padding: 10px 10px 10px;
+  background: #f5f5f5;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.shipping-wrapper {
+  display: flex;
+}
+
+.shipping-btn {
+  align-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  color: #141414;
+}
+
+.shipping-description {
+  margin: 0 0 0 20px;
+}
+
+.size-tabel_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 6px;
+}
+
+.size-tabel_title {
+  margin: 0;
+}
+
+.size-tabel_input {
+  width: 33px;
+  padding: 10px 10px 10px;
+  margin: 0 10px;
+}
+
+.size-tabel_type {
+  box-sizing: border-box;
+  width: 71px;
+  height: 43px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #8f8e8e;
+  border-radius: 5px;
+  color: #141414;
+}
+
+.calculator-btn {
+  width: 460px;
+  margin-top: 15px;
+}
+
+.price-card {
+  margin-bottom: 71px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 111px 150px 144px;
+}
+
+.price-title {
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32.5px;
+}
+
+.price-cost {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 104px;
+  background: linear-gradient(96.36deg, #ffe145 37.36%, #ff8540 108.89%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.price-description {
+  margin: 0;
+  color: #000;
+}
+
+/* media 768px */
+
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 134px 30px 80px;
+  }
+
+  .calculator-payment-wrapper {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .owner-information {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .header {
+    position: relative;
+    padding: 16px 16px 16px 21px;
+    margin: 0;
+  }
+
+  .calculator-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+  }
+
+  .main {
+    margin: 20px 20px 20px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .calculator-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .calculator-description {
+    margin: 20px 0 40px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12.6px;
+    text-align: center;
+  }
+
+  .calculator-payment-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .owner-information {
+    margin: 0;
+    padding: 0;
+  }
+
+  .block-1_wrapper {
+    justify-content: space-between;
+  }
+
+  .owner-country_wrapper {
+    margin: 0;
+  }
+
+  .block-2_wrapper {
+    justify-content: space-between;
+  }
+
+  .owner-postal_wrapper {
+    margin: 0;
+  }
+
+  .owner-input {
+    width: 146px;
+    padding: 7px;
+    color: #8f8e8e;
+  }
+
+  .owner-input_small {
+    padding: 7px;
+    width: 130px;
+    background: #ffffff;
+    border: 1px solid #8f8e8e;
+    border-radius: 3.6px;
+  }
+
+  .owner-input_mobile {
+    margin-left: 10px;
+  }
+
+  .shipping-wrapper {
+    margin-left: 6px;
+  }
+
+  .calculator-btn {
+    width: 336px;
+    margin: 0 auto;
+    margin-top: 14px;
+  }
+
+  .package-insure_description {
+    font-size: 16px;
+  }
+
+  .price-card {
+    width: 336px;
+    height: 212.63px;
+  }
+
+  .price-wrapper {
+    padding: 55px 74px 68px 75px;
+  }
+
+  .price-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+  }
+
+  .price-cost {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .price-description {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .shipping-size_wrapper {
+    padding: 10px 0 10px;
+  }
+
+  .size-tabel_input {
+    margin: 0 6px;
+  }
+}

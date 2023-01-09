@@ -1,0 +1,166 @@
+@import url(../../index.css);
+@import url(../About/HowItWork.css);
+
+.faq-background {
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+
+/* header */
+
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+/* main styles */
+
+.main {
+  display: flex;
+  margin: 171px 129px 149px 203px;
+}
+
+.faq-wrapper {
+  margin-right: 12px;
+}
+
+.faq-title {
+  margin: 0 0 25px;
+}
+
+.faq-description {
+  margin: 0 0 41px;
+}
+
+.faq-image {
+  max-width: 332px;
+  height: 100%;
+}
+
+/* faq accordion styles */
+
+.faq-accordion-wrapper {
+  margin-top: 11px;
+  border-bottom: 1px solid #D6D6D6;
+}
+
+.faq-accordion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-accordion .icon {
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/icons/button-plus.svg) no-repeat;
+  transition: all 0.5s ease-in;
+}
+
+.faq-accordion h5 {
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+}
+
+.active .icon {
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/icons/button-minus.svg) no-repeat;
+  transition: all 0.5s ease-in;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.panel.active {
+  display: block;
+  opacity: 1;
+  max-height: 200px;
+}
+
+
+.panel p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+
+/* media 767px */
+
+@media (min-width: 820px) and (max-width: 1279px)  {
+  .faq-wrapper {
+    min-width: 400px;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    margin: 60px 30px 80px;
+  }
+
+  .faq-image {
+    max-width: 332px;
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 819px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .header {
+    position: relative;
+    padding: 16px 16px 16px 21px;
+    margin: 0;
+  }
+
+  .faq-background {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    object-fit:cover;
+    transform: translate(0%,12%);
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 20px 20px 80px;
+    z-index: 3;
+  }
+
+  .faq-wrapper {
+    margin-right: 0;
+  }
+
+  .faq-title {
+    margin: 10px 0 25px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .faq-description {
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .faq-image {
+    width: 163px;
+    height: 200px;
+  }
+}

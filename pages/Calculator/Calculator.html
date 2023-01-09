@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=w, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../normalize.css" />
     <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-    <link rel="stylesheet" href="../About/HowItWork.css" />
+    <link rel="stylesheet" href="../Calculator/Calculator.css" />
     <title>Kapipar</title>
   </head>
   <body>
@@ -70,59 +70,81 @@
           </div>
         </div>
       </header>
-      <img class="main-background" src="../../assets/icons/lines.svg" alt="">
+      <img class="calculator-background" src="../../assets/icons/lines.svg" alt="lines"/>
       <section class="main">
-        <div class="how-works">
-          <h1 class="how-works_title">How It Works</h1>
-          <p class="how-works_description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
-            amet felis vel ante vestibulum sollicitudin. Praesent efficitur
-            condimentum lacus, sagittis vehicula tortor dictum vel.
+        <div class= title-wrapper">
+          <h1 class="calculator-title">Calculate your price</h1>
+          <p class="calculator-description">
+            Where will we be sending the package?
           </p>
-          <button class="get-btn how-works_btn">Get address</button>
         </div>
-        <div class="sing-up_wrapper">
-          <img class="sing-up_image" src="../../assets/images/sign.svg" alt="sing-up image" />
-          <div class="sing-up">
-            <h3 class="about-works_title">1. Sign up and get your EU address</h3>
-            <h4 class="about-works_subtitle">You will get address in Poland</h4>
-            <p class="about-works_description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
-              amet felis vel ante vestibulum sollicitudin. Praesent efficitur
-              condimentum lacus, sagittis vehicula tortor dictum vel.
-            </p>
+        <div class="calculator-payment-wrapper">
+          <div class="owner-information">
+            <div class="block-1_wrapper">
+              <div class="owner-country_wrapper">
+                <h4 class="owner-title">Country</h4>
+                <select class="owner-input">
+                  <option value="">Serbia</option>
+                </select>
+              </div>
+              <div class="owner-city_wrapper">
+                <h4 class="owner-title">City</h4>
+                <select class="owner-input">
+                  <option value="">Beograd</option>
+                </select>
+              </div>
+            </div>
+            <div class="block-2_wrapper">
+              <div class="owner-postal_wrapper">
+                <h4 class="owner-title">Postal Code</h4>
+                <input class="owner-input_small" type="text" placeholder="11122" readonly/>
+              </div>
+              <div class="owner-package_wrapper">
+                <h4 class="owner-title">Package Weight</h4>
+                <input class="owner-input_small owner-input_mobile" type="text" placeholder="100"/>
+              </div>
+            </div>
+            <h4 class="package-title">Package Value</h4>
+            <input class="package-input input-icon" type="text" placeholder="100"/>
+            <div class="package-insure_wrapper">
+              <input type="checkbox" id="scales" name="scales" />
+              <p class="package-insure_description">
+                do you want to insure the package?
+              </p>
+            </div>
+            <div class="package-insure_accardion">
+              <div class="shipping-size_wrapper">
+                <button class="shipping-wrapper shipping-btn">
+                  +
+                  <p class="shipping-description">
+                    I want to enter shipping sizes
+                  </p>
+                </button>
+                <div class="panel">
+                  <div class="size-tabel_wrapper">
+                    <p class="size-tabel_title">L</p>
+                    <input class="size-tabel_input" type="text" value="10" />
+                    <p class="size-tabel_title">W</p>
+                    <input class="size-tabel_input" type="text" value="10" />
+                    <p class="size-tabel_title">H</p>
+                    <input class="size-tabel_input" type="text" value="10" />
+                    <select class="size-tabel_type">
+                      <option value="">CM</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="get-btn calculator-btn">Check Your Price</button>
           </div>
-        </div>
-        <div class="shop-in_wrapper">
-          <div class="shop-in">
-            <h3 class="about-works_title">
-              2. Shop in any EU Store and ship it to your EU address
-            </h3>
-            <h4 class="about-works_subtitle">
-              Only Europeanian stores, without UK
-            </h4>
-            <p class="about-works_description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
-              amet felis vel ante vestibulum sollicitudin. Praesent efficitur
-              condimentum lacus, sagittis vehicula tortor dictum vel.
-            </p>
-          </div>
-          <img class="shop-in_image" src="../../assets/images/shopping.svg" alt="shop-in-image" />
-        </div>
-        <div class="sending-wrapper">
-          <img class="sending-image" src="../../assets/images/export.svg" alt="track" />
-          <div class="sending">
-            <h3 class="about-works_title">
-              3. When we get ypur package we will send it enywhere you want
-            </h3>
-            <h4 class="about-works_subtitle">
-              we can do many options with you package
-            </h4>
-            <p class="about-works_description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit
-              amet felis vel ante vestibulum sollicitudin. Praesent efficitur
-              condimentum lacus, sagittis vehicula tortor dictum vel.
-            </p>
+          <div class="price-card">
+            <div class="price-wrapper">
+              <h3 class="price-title">Your Price Is :</h3>
+              <p class="price-cost">12.89 €</p>
+              <p class="price-description">
+                usually it takes about 14 days for delivery
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -130,7 +152,7 @@
         <div class="link-wrapper">
           <div class="also-on">
             <h4 class="also-title">WE ARE ALSO ON</h4>
-            <hr class="also-underline">
+            <hr class="also-underline" />
             <div class="social-media">
               <a class="social-icon" href="instagram.com">
                 <div class="icon-instagram"></div>
@@ -159,7 +181,7 @@
             <a href="../About/careers.html" class="also-links">Career</a>
           </div>
         </div>
-        <hr class="underline">
+        <hr class="underline" />
         <div class="confidentiality">
           <p class="copyright">Copyright © 2022</p>
           <div class="privacy-policy_wrapper">
@@ -170,5 +192,6 @@
       </footer>
     </div>
     <script src="../../script.js"></script>
+    <script src="../Calculator/panel.js"></script>
   </body>
 </html>

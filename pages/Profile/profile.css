@@ -1,0 +1,531 @@
+@import url(../../index.css);
+
+/* reused styles */
+
+.edit-btn {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .edit-btn:hover {
+    color: #DADADA;
+  }
+
+  .profile-link:hover {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 10px;
+    background: #F4F4F4;
+  }
+}
+
+.profile-wrapper_title {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #474747;
+}
+
+
+/* main styles */
+
+.main {
+  display: flex;
+  margin: 122px 129px 150px 130px;
+}
+
+.left-side_profile {
+  width: 239px;
+  height: 262px;
+  padding: 20px;
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+}
+
+.profile-link {
+  width: 199px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #141414;
+}
+
+.profile-link:last-child {
+  margin-bottom: 0;
+}
+
+.profile-link_icon {
+  margin-right: 5px;
+}
+
+.right-side_profile {
+  width: 100%;
+  margin-left: 31px;
+}
+
+.profile-title {
+  margin: 0 0 20px;
+  line-height: 30.48px;
+}
+
+.profile-information {
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+}
+
+.profile-photo {
+  display: flex;
+  align-items: center;
+  margin: 31px 0 16px 25px;
+}
+
+.photo-circle {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  border-radius: 100px;
+  background: #FFE145;
+}
+
+.user-photo {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-name {
+  margin: 0;
+  margin-left: 25px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  color: #FFE145;
+}
+
+.profile-email {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 25px;
+}
+
+.mail-icon {
+  margin-left: 25px;
+}
+
+.email-title {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #474747;
+}
+
+.highlight {
+  margin-right: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #474747;
+}
+
+.profile-right_icon {
+  margin-left: 25px;
+}
+
+.red-dot {
+  color: #FF0000;
+}
+
+.profile-password_wrapper {
+  margin-top: 20px;
+  padding: 25px 0 25px 25px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+}
+
+.profile-password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.password-title {
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #474747;
+}
+
+.password-title_hidden {
+  display: none;
+}
+
+.panel-password {
+  display: none;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
+.panel-password_show {
+  display: block;
+}
+
+.submit-change {
+  width: 200px;
+  height: 24px;
+}
+
+.user-address_wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 20px;
+  padding: 25px 0 25px 25px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+}
+
+.user-title_wrapper {
+  display: flex;
+}
+
+.user-location_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.location-input {
+  width: 300px;
+  margin-left: 4px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 2px 20px;
+  border: 1px solid #DADADA;
+  border-radius: 50px;
+}
+
+.location-select {
+  width: 342px;
+  background: #FFF;
+  color: #474747;
+}
+
+.location-btn {
+  width: 200px;
+  margin-left: 60px;
+}
+
+.user-input_title {
+  margin: 0;
+  margin-left: 4px;
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 14px;
+  color: #141414;
+}
+
+.user-popup {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.user-popup:target {
+  display: block;
+}
+
+.user-popup:target .popup-content {
+  display: block;
+}
+
+.popup-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.user-popup_body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup-content {
+  background-color: #FFF;
+  color: #141414;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  display: block;
+  border-radius: 15px;
+}
+
+.popup-btn_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 34px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  background: linear-gradient(96.36deg, #FFE145 37.36%, #FF8540 108.89%);
+  border-radius: 50px;
+}
+
+.popup-title {
+  font-size: 22px;
+  margin: 0px 0px 1em 0px;
+}
+
+@media screen and (max-width: 1279px) {
+  .main {
+    margin: 134px 30px 80px;
+  }
+}
+
+@media screen and (max-width: 819px) {
+  .wrapper {
+    width: auto;
+  }
+
+  #lines-image {
+    position: relative;
+    background: url(../../assets/icons/lines.svg) no-repeat;
+    background-position: 0% 10%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 70px;
+    position: relative;
+  }
+
+  .left-side_profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0;
+    border: none;
+  }
+
+  .profile-link {
+    width: 157px;
+    height: 27px;
+    padding: 5px 0px 5px 10px;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .profile-link:hover {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+  .right-side_profile {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .profile-information {
+    padding: 14px 0 18px 10px;
+    background: #FFF;
+  }
+
+  .profile-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .profile-photo {
+    margin: 0;
+  }
+
+  .photo-circle {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  .user-photo {
+    width: 30px;
+    height: 16px;
+  }
+
+  .profile-name {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .profile-email {
+    margin: 8px 0 11px 0;
+  }
+
+  .highlight {
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .profile-right_icon {
+    margin-left: 0;
+  }
+
+  .profile-right_icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
+  }
+
+  .email-title {
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .mail-icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
+  }
+
+  .profile-wrapper_title {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .edit-btn {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .profile-password_wrapper {
+    height: 42px;
+    margin-top: 10px;
+    padding: 14px 0 18px 10px;
+    background: #FFF;
+  }
+
+  .password-title {
+    margin-top: 6px;
+    margin-left: 32px;
+  }
+
+  .panel-wrapper {
+    margin-top: 6px;
+  }
+
+  .location-input {
+    width: 240px;
+  }
+
+  .location-select {
+    width: 282px;
+  }
+
+  .location-btn {
+    width: 180px;
+    margin-left: 25px;
+  }
+
+  .user-address_wrapper {
+    margin-top: 10px;
+    padding: 14px 0 18px 10px;
+  }
+
+  .user-input_title {
+    font-size: 9px;
+    line-height: 12.6px;
+  }
+
+  .user-location_wrapper {
+    margin-top: 6px;
+    margin-left: 22px;
+    gap: 4px;
+  }
+
+  .location-input {
+    font-size: 9px;
+    line-height: 12.6px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .popup-title {
+    font-size: 12px;
+  }
+
+  .popup-text {
+    font-size: 12px;
+  }
+
+  .popup-close {
+    width: 80px;
+    height: 22px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 8px;
+  }
+
+  .panel-password {
+    width: 200px;
+    margin-top: 6px;
+    margin-left: 20px;
+  }
+
+  .submit-change {
+    height: 22px;
+    font-size: 12px;
+  }
+}

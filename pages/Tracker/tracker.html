@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=w, initial-scale=1.0" />
   <link rel="stylesheet" href="../../normalize.css" />
-  <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../DetailService/DetailService.css" />
+  <link rel="shortcut icon" href="../../assets/icons/kapipar-logo.svg" />
+  <link rel="stylesheet" href="../Tracker/tracker.css" />
   <title>Kapipar</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div id="lines-image" class="wrapper">
     <header class="header">
       <div class="header-wrapper">
         <a href="../../index.html">
@@ -70,72 +70,45 @@
         </div>
       </div>
     </header>
-    <img class="detail-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="detail-main">
-      <div class="detail-package">
-        <div class="greeting-wrapper">
-          <h1 class="greeting-title">Package Consolidation</h1>
-          <p class="greeting-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam sit amet felis vel ante vestibulum sollicitudin.
-            Praesent efficitur condimentum lacus, sagittis vehicula
-            tortor dictum vel.
-          </p>
-          <button class="get-btn">Get address</button>
-        </div>
-        <img src="../../assets/images/delivery-v2.svg" alt="">
-      </div>
-      <div class="detail-description">
-        <h4 class="detail-description_title">Lorem Ipsum</h4>
-        <p class="detail-description_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Quisque eleifend ac ligula eget
-          convallis. Aliquam erat volutpat. Duis ac posuere nisi,
-          id consequat tellus. Phasellus ornare ligula eget enim
-          tempor pretium. Pellentesque hendrerit cursus consectetur.
-          Praesent facilisis ut dui vel dignissim. Nulla dignissim
-          justo at lobortis sodales. Maecenas dapibus dolor purus,
-          vel hendrerit ipsum cursus at. Maecenas eu nibh eros. In
-          hac habitasse platea dictumst. In leo arcu, suscipit in
-          laoreet et, sagittis vitae ex.
-        </p>
-        <div class="grants-wrapper">
-          <div class="grants-cards">
-            <img src="../../assets/icons/police-badge.svg" alt="police-badge">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="main">
+      <aside class="left-side_profile">
+        <a class="profile-link" href="../Profile/profile.html">
+          <img class="profile-link_icon" src="../../assets/icons/profile-icon.svg" alt="profile-icon">
+          Profile
+        </a>
+        <a class="profile-link" href="../Order/order.html">
+          <img class="profile-link_icon order-icon" src="../../assets/icons/order-icon.svg" alt="order-icon">
+          My Orders
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          Track Your Package
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          My address
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/logout-icon.svg" alt="logout-icon">
+          Log Out
+        </a>
+      </aside>
+      <div class="right-side_tracker">
+        <h2 class="tracker-title">Track Package</h2>
+        <div class="shipping-check_wrapper">
+          <div class="shipping-check_title-wrapper">
+            <img class="track-icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+            <h4 class="shipping-check_title">Shipping Check</h4>
           </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/tech-support.svg" alt="tech-support">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="tracker-image_wrapper">
+            <img class="tracker-image" src="../../assets/images/tracker-image.svg" alt="tracker-image">
           </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/refund.svg" alt="refund">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/credit-cards.svg" alt="credit-cards">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
+          <form class="tracker-input_wrapper">
+            <input class="tracker-input" type="text" placeholder="Please Enter Your Number Order">
+            <button class="get-btn tracker-btn">Track</button>
+          </form>
         </div>
       </div>
-    </section>
-    <div class="testimonials-wrapper">
-      <div class="testimonials">
-        <h4>Testimonials</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus.
-        </p>
-        <button class="get-btn">Get address</button>
-      </div>
-      <div></div>
     </div>
     <footer class="footer">
       <div class="link-wrapper">

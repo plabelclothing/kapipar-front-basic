@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../normalize.css" />
   <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../DetailService/DetailService.css" />
+  <link rel="stylesheet" href="../Contact/Contact.css" />
   <title>Kapipar</title>
 </head>
 <body>
@@ -70,72 +70,57 @@
         </div>
       </div>
     </header>
-    <img class="detail-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="detail-main">
-      <div class="detail-package">
-        <div class="greeting-wrapper">
-          <h1 class="greeting-title">Package Consolidation</h1>
-          <p class="greeting-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam sit amet felis vel ante vestibulum sollicitudin.
-            Praesent efficitur condimentum lacus, sagittis vehicula
-            tortor dictum vel.
-          </p>
-          <button class="get-btn">Get address</button>
-        </div>
-        <img src="../../assets/images/delivery-v2.svg" alt="">
-      </div>
-      <div class="detail-description">
-        <h4 class="detail-description_title">Lorem Ipsum</h4>
-        <p class="detail-description_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Quisque eleifend ac ligula eget
-          convallis. Aliquam erat volutpat. Duis ac posuere nisi,
-          id consequat tellus. Phasellus ornare ligula eget enim
-          tempor pretium. Pellentesque hendrerit cursus consectetur.
-          Praesent facilisis ut dui vel dignissim. Nulla dignissim
-          justo at lobortis sodales. Maecenas dapibus dolor purus,
-          vel hendrerit ipsum cursus at. Maecenas eu nibh eros. In
-          hac habitasse platea dictumst. In leo arcu, suscipit in
-          laoreet et, sagittis vitae ex.
+    <div class="background-box">
+      <img class="contact-background" src="../../assets/icons/lines.svg" alt="lines">
+    </div>
+    <h1 class="contact-title">Contact Us!</h1>
+    <div class="contact-wrapper">
+      <img class="contact-image" src="../../assets/images/telephone-guy.svg" alt="telephone-guy">
+      <div class="contact-data_wrapper">
+        <p class="contact-subtitle">Please fill the contact form below, Our team will respond
+          back to you in one working day.
         </p>
-        <div class="grants-wrapper">
-          <div class="grants-cards">
-            <img src="../../assets/icons/police-badge.svg" alt="police-badge">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="contact-input_title">Name*</p>
+        <input class="contact-input" type="text">
+        <div class="email-phone_wrapper">
+          <div class="email">
+            <p class="contact-input_title">Email*</p>
+            <input class="contact-input email-phone_input" type="text">
           </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/tech-support.svg" alt="tech-support">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/refund.svg" alt="refund">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/credit-cards.svg" alt="credit-cards">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="phone">
+            <p class="contact-input_title">Phone number*</p>
+            <input class="contact-input email-phone_input" type="text">
           </div>
         </div>
+        <p class="contact-input_title">Inquiry*</p>
+        <input class="contact-input" type="text">
+        <p class="contact-input_title">Message*</p>
+        <input class="contact-input message-input" type="text">
+        <div class="captcha-wrapper">
+          <div class="g-recaptcha" data-sitekey="6Lf1MkcUAAAAAFFY9zmereeM0-HHoJP5_25wiLLz"></div>
+          <button class="get-btn">Submit</button>
+        </div>
       </div>
-    </section>
-    <div class="testimonials-wrapper">
-      <div class="testimonials">
-        <h4>Testimonials</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus.
-        </p>
-        <button class="get-btn">Get address</button>
+    </div>
+    <div class="detail-wrapper">
+      <div class="detail">
+        <h4 class="detail-title">Detail</h4>
+        <div class="detail-contact_wrapper">
+          <div class="detail-contact_phone">
+            <img class="detail-image" src="../../assets/icons/handset-icon.svg" alt="">
+            <a class="detail-contact_link" href=""><span class="link-title">Phone :</span> +1 02 0223 0223</a>
+          </div>
+          <div class="detail-contact_email">
+            <img class="detail-image" src="../../assets/icons/envelope-icon.svg" alt="">
+            <a class="detail-contact_link" href=""><span class="link-title">Email :</span> youremail@gmail.com</a>
+          </div>
+        </div>
+        <div class="detail-email_wrapper">
+          <img class="detail-image" src="../../assets/icons/address-tag-icon.svg" alt="">
+          <a class="detail-contact_link" href=""><span class="link-title">Address :</span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</a>
+        </div>
       </div>
-      <div></div>
+      <img class="detail-footer_image" src="../../assets/images/calling-guy-girl.svg" alt="">
     </div>
     <footer class="footer">
       <div class="link-wrapper">
@@ -181,5 +166,5 @@
     </footer>
   </div>
   <script src="../../script.js"></script>
-</body>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 </html>

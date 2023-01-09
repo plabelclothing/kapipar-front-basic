@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../normalize.css" />
   <link rel="shortcut icon" href="../../assets/icons/short-icon.png" />
-  <link rel="stylesheet" href="../DetailService/DetailService.css" />
+  <link rel="stylesheet" href="../Profile/profile.css" />
   <title>Kapipar</title>
 </head>
 <body>
-  <div class="wrapper">
+  <div id="lines-image" class="wrapper">
     <header class="header">
       <div class="header-wrapper">
         <a href="../../index.html">
@@ -70,72 +70,108 @@
         </div>
       </div>
     </header>
-    <img class="detail-background" src="../../assets/icons/lines.svg" alt="lines">
-    <section class="detail-main">
-      <div class="detail-package">
-        <div class="greeting-wrapper">
-          <h1 class="greeting-title">Package Consolidation</h1>
-          <p class="greeting-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Nam sit amet felis vel ante vestibulum sollicitudin.
-            Praesent efficitur condimentum lacus, sagittis vehicula
-            tortor dictum vel.
-          </p>
-          <button class="get-btn">Get address</button>
-        </div>
-        <img src="../../assets/images/delivery-v2.svg" alt="">
-      </div>
-      <div class="detail-description">
-        <h4 class="detail-description_title">Lorem Ipsum</h4>
-        <p class="detail-description_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos. Quisque eleifend ac ligula eget
-          convallis. Aliquam erat volutpat. Duis ac posuere nisi,
-          id consequat tellus. Phasellus ornare ligula eget enim
-          tempor pretium. Pellentesque hendrerit cursus consectetur.
-          Praesent facilisis ut dui vel dignissim. Nulla dignissim
-          justo at lobortis sodales. Maecenas dapibus dolor purus,
-          vel hendrerit ipsum cursus at. Maecenas eu nibh eros. In
-          hac habitasse platea dictumst. In leo arcu, suscipit in
-          laoreet et, sagittis vitae ex.
-        </p>
-        <div class="grants-wrapper">
-          <div class="grants-cards">
-            <img src="../../assets/icons/police-badge.svg" alt="police-badge">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="main">
+      <aside class="left-side_profile">
+        <a class="profile-link" href="../../pages/Profile/profile.html">
+          <img class="profile-link_icon" src="../../assets/icons/profile-icon.svg" alt="profile-icon">
+          Profile
+        </a>
+        <a class="profile-link" href="../Order/order.html">
+          <img class="profile-link_icon order-icon" src="../../assets/icons/order-icon.svg" alt="order-icon">
+          My Orders
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          Track Your Package
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+          My address
+        </a>
+        <a class="profile-link" href="#">
+          <img class="profile-link_icon" src="../../assets/icons/logout-icon.svg" alt="logout-icon">
+          Log Out
+        </a>
+      </aside>
+      <div class="right-side_profile">
+        <h2 class="profile-title">Profile</h2>
+        <div class="profile-information">
+          <div class="profile-photo">
+            <div class="photo-circle">
+              <img class="user-photo" src="../../assets/icons/profile-icon.svg" alt="">
+            </div>
+            <p class="profile-name">Sean Aditia</p>
           </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/tech-support.svg" alt="tech-support">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/refund.svg" alt="refund">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          </div>
-          <div class="grants-cards">
-            <img src="../../assets/icons/credit-cards.svg" alt="credit-cards">
-            <h4 class="grants-cards_title">Lorem Ipsum</h4>
-            <p class="grants-cards_description">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <div class="profile-email">
+            <img class="mail-icon" src="../../assets/icons/mail-icon.svg" alt="email-icon">
+            <p class="email-title"><span class="highlight">Email</span>: ilkerturker@gmail.com</p>
           </div>
         </div>
+        <div class="profile-password_wrapper">
+          <div class="profile-password">
+            <div class="password-wrapper">
+              <img class="profile-right_icon" src="../../assets/icons/lock-icon.svg" alt="lock-icon">
+              <p class="profile-wrapper_title">Password</p>
+            </div>
+            <div class="edit-btn change-btn">Change</div>
+          </div>
+          <div class="panel-password">
+            <a href="#user-popup">
+              <button class="get-btn submit-change">Change Password</button>
+            </a>
+          </div>
+          <p class="password-title">**********</p>
+        </div>
+        <div class="user-address_wrapper">
+          <div class="user-title_wrapper">
+            <img class="profile-right_icon" src="../../assets/icons/track-icon.svg" alt="track-icon">
+            <p class="profile-wrapper_title">Delivery address</p>
+          </div>
+          <div class="user-location_wrapper">
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> Country</p>
+              <select class="location-input location-select" name="" id="">
+                <option value="">Poland</option>
+                <option value="">Germany</option>
+                <option value="">Finland</option>
+                <option value="">England</option>
+              </select>
+            </div>
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> Region</p>
+              <input class="location-input" type="text">
+            </div>
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> City</p>
+              <input class="location-input" type="text">
+            </div>
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> Street</p>
+              <input class="location-input" type="text">
+            </div>
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> Full name</p>
+              <input class="location-input" type="text">
+            </div>
+            <div class="user-input_wrapper">
+              <p class="user-input_title"><span class="red-dot">*</span> Phone</p>
+              <input class="location-input" type="text">
+            </div>
+          </div>
+          <button class="get-btn location-btn">Save</button>
+        </div>
+        <div id="user-popup" class="user-popup">
+          <a href="#" class="popup-area"></a>
+          <div class="user-popup_body">
+            <div class="popup-content">
+              <div class="popup-title">Request to change the password is successful</div>
+              <div class="popup-btn_wrapper">
+                <a href="#" class="popup-close close-popup">close</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <div class="testimonials-wrapper">
-      <div class="testimonials">
-        <h4>Testimonials</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Etiam ultrices, ante non blandit imperdiet, lectus mauris
-          egestas augue, sit amet commodo ante diam ac lacus. Morbi
-          in nisi eget risus elementum tempus.
-        </p>
-        <button class="get-btn">Get address</button>
-      </div>
-      <div></div>
     </div>
     <footer class="footer">
       <div class="link-wrapper">
@@ -166,7 +202,7 @@
           <h4 class="about-us_title">About Us</h4>
           <a href="../About/HowItWork.html" class="also-links">How It Works</a>
           <a href="../About/faq.html" class="also-links">FAQ</a>
-          <a href="../About/OurBussines.html" class="also-links">Our Bussines</a>
+          <a href="../About/OurBussines.html" class="also-links">Our Business</a>
           <a href="../About/careers.html" class="also-links">Career</a>
         </div>
       </div>
@@ -180,6 +216,7 @@
       </div>
     </footer>
   </div>
+  <script src="../Profile/profile.js"></script>
   <script src="../../script.js"></script>
 </body>
 </html>
